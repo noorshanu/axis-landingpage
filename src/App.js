@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import About from "./sections/About";
 import Hero from "./sections/Hero";
 import Mission from "./sections/Mission";
+import Roadmap from "./sections/Roadmap";
 
 function App() {
   return (
@@ -14,7 +15,10 @@ function App() {
       </div>
       <div className="mx-auto  max-w-7xl px-8 sm:px-12 ">
         <About />
-        <Mission/>
+        <Mission />
+      </div>
+      <div className="mx-auto  max-w-7xl px-8 sm:px-12 ">
+        <Roadmap />
       </div>
     </div>
   );
