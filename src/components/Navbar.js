@@ -5,7 +5,11 @@ import { Bars3Icon, XMarkIcon, WalletIcon } from "@heroicons/react/24/outline";
 
 let navItems = [
   { label: "Our mission", route: "/", icon: "/assets/icons/business.png" },
-  { label: "Market overview", route: "Market", icon: "/assets/icons/finance.png" },
+  {
+    label: "Market overview",
+    route: "Market",
+    icon: "/assets/icons/finance.png",
+  },
   { label: "Features", route: "Create", icon: "/assets/icons/interface.png" },
   { label: "Roadmap", route: "Wallet", icon: "/assets/icons/cube.png" },
 ];
@@ -46,14 +50,14 @@ export default function Navbar() {
             >
               Try AI
             </a>
-            <img src="/assets/icons/flag.png"/>
+            <img src="/assets/icons/flag.png" className="sm:flex hidden " />
 
             <div className=" md:hidden">
-              <Popover.Button className=" inline-flex items-center justify-center  rounded-md  p-2">
+              <Popover.Button className="bg-gradient-to-r from-[#acffb9] to-[#11ff37] inline-flex items-center justify-center  rounded-md  p-2">
                 <span className="sr-only">Open menu</span>
                 <Bars3Icon
                   className="h-6 w-6"
-                  color="white"
+                  color="black"
                   aria-hidden="true"
                 />
               </Popover.Button>
@@ -79,18 +83,7 @@ export default function Navbar() {
             <div className="bg-black px-5 py-3">
               <div className="flex items-center justify-between">
                 <div className="focus:border:0 flex items-center justify-center space-x-1 focus:outline-0 focus:ring-0">
-                  <a
-                    href="#"
-                    className="flex items-center space-x-1  bg-gradient-to-l from-[#e250e5] to-[#4b50e6] bg-clip-text"
-                  >
-                    <FireIcon className="h-8 w-auto fill-black stroke-[white] sm:h-10" />
-                    <span
-                      style={{ WebkitTextStroke: "3px transparent" }}
-                      className="bg-gradient-to-l from-[#e250e5] to-[#4b50e6] bg-clip-text fill-[#14141f] text-4xl font-bold"
-                    >
-                      NFT
-                    </span>
-                  </a>
+                  <img src="/assets/images/logo.png" />
                 </div>
                 <div className="-mr-2">
                   <Popover.Button className=" inline-flex items-center justify-center rounded-md  p-2">
@@ -125,13 +118,7 @@ export default function Navbar() {
                   );
                 })}
               </div>
-              <a
-                href="#"
-                className="flex items-center space-x-2 whitespace-nowrap rounded-md border-2 border-solid border-gray-900 bg-transparent py-2 px-6 text-sm font-medium text-white hover:bg-gray-900 sm:hidden md:mr-0"
-              >
-                <WalletIcon className="h5 w-5 sm:h-6" />{" "}
-                <span>Connect Wallet</span>
-              </a>
+            
             </div>
           </div>
         </Popover.Panel>

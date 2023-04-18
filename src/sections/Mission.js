@@ -12,7 +12,7 @@ const Mission = () => {
         </p>
       </div>
       <div className="flex flex-wrap md:flex-nowrap md:mt-32 mt-12 justify-center space-x-5 space-y-4 items-center">
-        <div className="space-y-5 text-white self-start font-red-hat">
+        <div className="space-y-5 sm:px-[12px] text-white self-center sm:self-start font-red-hat  w-auto">
           <h5 className="font-monument text-xl">Our Mission</h5>
           <p>Put DeFi right where it belongs</p>
           <p>Accelerate the mass adoption</p>

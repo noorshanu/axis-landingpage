@@ -4,9 +4,9 @@ import React from "react";
 
 const Hero = () => {
   return (
-      <div className="Hero sm:min-h-[525px] py-12 sm:pb-12 pb-[27rem] sm:mt-12 grid grid-cols-1 md:grid-cols-2 md:gap-x-10  lg:grid-cols-2 lg:gap-x-56">
-        <div className="space-y-7 md:space-y-12 flex flex-col justify-center">
-          <h1 className="font-extrabold font-monument text-white text-[2.5rem] leading-[45px]  sm:text-[48px] sm:leading-[60px]">
+      <div className="Hero sm:min-h-[525px] mx-[1.5rem] py-12 sm:pb-14 pb-[27rem] sm:mt-12 grid grid-cols-1 md:grid-cols-2 md:gap-x-10  lg:grid-cols-2 lg:gap-x-56">
+        <div className="space-y-4 md:space-y-12 ">
+          <h1 className="font-extrabold font-monument text-white text-[2.2rem] leading-[45px]  sm:text-[48px] sm:leading-[60px]">
             Shaping The Future of DeFi On{" "}
             <span className="text-[#6BFF83]"> Arbitrum</span>
           </h1>
@@ -15,10 +15,7 @@ const Hero = () => {
             <span className="text-[#6BFF83] mx-1">all-in-one</span>
             DeFi Protocol. Ax your way to the future of DeFi!
           </p>
-          <button className="bg-white rounded-full w-fit text-black font-medium font-red-hat flex justify-center items-center px-3 py-2">
-            <img src="/assets/icons/mouse.png" className="mr-1 h-6 w-6" />
-            scroll down
-          </button>
+         
           <div className="flex items-center space-x-4">
             <img src="/assets/icons/twitter.png" />
             <img src="/assets/icons/discord.png" />
