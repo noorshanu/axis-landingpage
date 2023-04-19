@@ -18,3 +18,6 @@
 .box{
   background: linear-gradient(122.95deg, rgba(22, 22, 26, 0) -4.06%, rgba(255, 255, 255, 0.0962) 53.16%, rgba(22, 22, 26, 0) 133.85%);
 }
+.roadmapBox{
+  background: linear-gradient(172.73deg, #ACFFB9 -145.79%, #11FF37 -18.79%, #000000 77.91%);
+}

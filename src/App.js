@@ -6,6 +6,7 @@ import Hero from "./sections/Hero";
 import Market from "./sections/Market";
 import Mission from "./sections/Mission";
 import MobileApp from "./sections/MobileApp";
+import Path from "./sections/Path";
 import Roadmap from "./sections/Roadmap";
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
         <Market/>
         <AxisNFTs/>
         <MobileApp/>
+        <Path/>
       </div>
     </div>
   );
