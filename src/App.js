@@ -1,3 +1,4 @@
+import Services from "./Services";
 import Navbar from "./components/Navbar";
 import About from "./sections/About";
 import Hero from "./sections/Hero";
@@ -17,8 +18,21 @@ function App() {
         <About />
         <Mission />
       </div>
+
       <div className="mx-auto  max-w-7xl px-4 sm:px-12 ">
-        <Roadmap />
+        <button className="font-monument font-normal text-2xl text-white bg-[url('/public/assets/images/button.svg')] w-full h-[180px] my-12 rounded-lg cursor-pointer bg-cover">
+          Join Our Waitlist
+        </button>
+        {/* <Roadmap /> */}
+        <Services />
+
+        <div className=" py-24 w-full sm:flex flex-col hidden ">
+          <img src="/assets/images/line.svg" className="w-full h-auto" />
+          <img src="/assets/images/line.svg" className="w-full h-auto mt-4" />
+        </div>
+      </div>
+      <div className=" mt-12 py-3 px-3 w-full">
+        <img src="/assets/images/line.svg" className="w-full h-auto  sm:hidden flex " />
       </div>
     </div>
   );

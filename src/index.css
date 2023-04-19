@@ -10,7 +10,11 @@
 @font-face {
   font-family: "Monument Extended";
   src: url('../public/fonts/MonumentExtended/MonumentExtended-Ultrabold.otf');
+  src: url('../public/fonts/MonumentExtended/MonumentExtended-Regular.otf');
 }
 .font-monument{
   font-family: "Monument Extended";
+}
+.box{
+  background: linear-gradient(122.95deg, rgba(22, 22, 26, 0) -4.06%, rgba(255, 255, 255, 0.0962) 53.16%, rgba(22, 22, 26, 0) 133.85%);
 }

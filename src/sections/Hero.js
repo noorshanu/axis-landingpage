@@ -4,7 +4,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-      <div className="Hero sm:min-h-[525px] mx-[1.5rem] py-12 sm:pb-14 pb-[27rem] sm:mt-12 grid grid-cols-1 md:grid-cols-2 md:gap-x-10  lg:grid-cols-2 lg:gap-x-56">
+      <div className="Hero sm:min-h-[525px] mx-[1.5rem] py-8 sm:pb-14 pb-[27rem] sm:mt-12 grid grid-cols-1 md:grid-cols-2 md:gap-x-10  lg:grid-cols-2 lg:gap-x-56">
         <div className="space-y-4 md:space-y-12 ">
           <h1 className="font-extrabold font-monument text-white text-[2.2rem] leading-[45px]  sm:text-[48px] sm:leading-[60px]">
             Shaping The Future of DeFi On{" "}
