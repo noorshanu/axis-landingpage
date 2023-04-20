@@ -3,21 +3,46 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&display=swap');
 
 .font-red-hat {
   font-family: "Red Hat Display", sans-serif;
 }
 @font-face {
   font-family: "Monument Extended";
-  src: url('../public/fonts/MonumentExtended/MonumentExtended-Ultrabold.otf');
-  src: url('../public/fonts/MonumentExtended/MonumentExtended-Regular.otf');
+  src: url("../public/fonts/MonumentExtended/MonumentExtended-Ultrabold.otf");
+  src: url("../public/fonts/MonumentExtended/MonumentExtended-Regular.otf");
 }
-.font-monument{
+@font-face {
+  font-family: "Organetto";
+  src: url("../public/fonts/MonumentExtended/Organetto.otf");
+}
+.font-monument {
   font-family: "Monument Extended";
 }
-.box{
-  background: linear-gradient(122.95deg, rgba(22, 22, 26, 0) -4.06%, rgba(255, 255, 255, 0.0962) 53.16%, rgba(22, 22, 26, 0) 133.85%);
+.font-organetto {
+  font-family: "Organetto";
 }
-.roadmapBox{
-  background: linear-gradient(172.73deg, #ACFFB9 -145.79%, #11FF37 -18.79%, #000000 77.91%);
+.font-barlow{
+  font-family: 'Barlow', sans-serif;
+}
+.box {
+  background: linear-gradient(
+    122.95deg,
+    rgba(22, 22, 26, 0) -4.06%,
+    rgba(255, 255, 255, 0.0962) 53.16%,
+    rgba(22, 22, 26, 0) 133.85%
+  );
+}
+.roadmapBox {
+  background: linear-gradient(
+    172.73deg,
+    #acffb9 -145.79%,
+    #11ff37 -18.79%,
+    #000000 77.91%
+  );
+}
+.footer {
+  /* background-image: linear-gradient(91.73deg, #000000 -37.2%, rgba(113, 113, 113, 0) 53.28%, #000000 148.15%);
+  backdrop-filter: blur(32px); */
 }

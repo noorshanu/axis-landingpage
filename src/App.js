@@ -1,4 +1,5 @@
-import Services from "./Services";
+import Services from "./sections/Services";
+import Team from "./sections/Team";
 import Navbar from "./components/Navbar";
 import About from "./sections/About";
 import AxisNFTs from "./sections/AxisNFTs";
@@ -8,10 +9,12 @@ import Mission from "./sections/Mission";
 import MobileApp from "./sections/MobileApp";
 import Path from "./sections/Path";
 import Roadmap from "./sections/Roadmap";
+import FollowUs from "./sections/FollowUs";
+import Footer from "./sections/Footer";
 
 function App() {
   return (
-    <div className="bg-[#000] min-h-screen">
+    <div className="bg-[#000] h-max">
       <div className="sm:bg-[url('/public/assets/images/hero-bg.png')] bg-[url('/public/assets/images/hero-bg-sm.png')] h-[800px] sm:h-[732px] sm:bg-[length:75%_100%] bg-[length:100vw_100vh] bg-no-repeat sm:bg-right-top bg-bottom">
         <div className="mx-auto  max-w-7xl px-4 sm:px-12 ">
           <Navbar />
@@ -27,7 +30,7 @@ function App() {
         <button className="font-monument font-normal text-2xl text-white bg-[url('/public/assets/images/button.svg')] w-full h-[180px] my-12 rounded-lg cursor-pointer bg-cover">
           Join Our Waitlist
         </button>
-        {/* <Roadmap /> */}
+        <Roadmap />
         <Services />
 
         <div className=" pt-24 w-full sm:flex flex-col hidden ">
@@ -44,7 +47,11 @@ function App() {
         <AxisNFTs/>
         <MobileApp/>
         <Path/>
+        <Team/>
       </div>
+        <FollowUs/>
+        <Footer/>
+
     </div>
   );
 }

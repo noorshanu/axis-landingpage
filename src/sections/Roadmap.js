@@ -39,13 +39,56 @@ let cards = [
 ];
 const Roadmap = () => {
   return (
-    <div className="mt-20 ">
-      <div className="flex gap-2 sm:gap-12 rounded-[60px] sm:p-12 lg:py-24 lg:px-52 bg-black  place-items-center border-none sm:border-dashed border-b border-l border-t border-gray-400">
-        <RoadmapCard data={{...cards[0], img:"/assets/images/1.png"}} />
-        <img src="/assets/images/line.png" className="self-end hidden sm:flex"/>
-        <RoadmapCard data={{...cards[1], img:"/assets/images/2.png"}} />
+    <div className="my-20 ">
+      <div className="flex overflow-x-scroll scroll-smooth  gap-2 sm:gap-12 rounded-[60px] sm:p-12 lg:py-24 lg:px-52 bg-black  place-items-center border-none sm:border-dashed border-b border-l border-t border-gray-400">
+        <RoadmapCard data={{ ...cards[0], img: "/assets/images/1.png" }} />
+        <img
+          src="/assets/images/line.png"
+          className="self-end hidden sm:flex"
+        />
+        <RoadmapCard data={{ ...cards[1], img: "/assets/images/2.png" }} />
+        <img
+          src="/assets/images/line.png"
+          className="self-end hidden sm:flex"
+        />
+        <RoadmapCard data={{ ...cards[2], img: "/assets/images/3.png" }} />
+        <img
+          src="/assets/images/line.png"
+          className="self-end hidden sm:flex"
+        />
+        <RoadmapCard data={{ ...cards[3], img: "/assets/images/4.png" }} />
+        <img
+          src="/assets/images/line.png"
+          className="self-end hidden sm:flex"
+        />
+        <RoadmapCard data={{ ...cards[4], img: "/assets/images/5.png" }} />
+        <img
+          src="/assets/images/line.png"
+          className="self-end hidden sm:flex"
+        />
+        <RoadmapCard data={{ ...cards[5], img: "/assets/images/6.png" }} />
+        <img
+          src="/assets/images/line.png"
+          className="self-end hidden sm:flex"
+        />
+        <RoadmapCard data={{ ...cards[6], img: "/assets/images/7.png" }} />
+        <img
+          src="/assets/images/line.png"
+          className="self-end hidden sm:flex"
+        />
+        <RoadmapCard data={{ ...cards[7], img: "/assets/images/8.png" }} />
+        <img
+          src="/assets/images/line.png"
+          className="self-end hidden sm:flex"
+        />
+        <RoadmapCard data={{ ...cards[8], img: "/assets/images/9.png" }} />
+        <img
+          src="/assets/images/line.png"
+          className="self-end hidden sm:flex"
+        />
+        <RoadmapCard data={{ ...cards[9], img: "/assets/images/10.png" }} />
       </div>
-      <div className="flex gap-2 sm:gap-12 rounded-[60px] sm:p-12 lg:py-24 lg:px-52 bg-black place-items-center border-none sm:border-dashed border-b border-r  border-gray-400">
+      {/* <div className="flex gap-2 sm:gap-12 rounded-[60px] sm:p-12 lg:py-24 lg:px-52 bg-black place-items-center border-none sm:border-dashed border-b border-r  border-gray-400">
         <RoadmapCard data={{...cards[2], img:"/assets/images/3.png"}} />
         <img src="/assets/images/line.png" className="self-end hidden sm:flex"/>
         <RoadmapCard data={{...cards[3], img:"/assets/images/4.png"}} />
@@ -64,7 +107,7 @@ const Roadmap = () => {
         <RoadmapCard data={{...cards[8], img:"/assets/images/9.png"}} />
         <img src="/assets/images/line.png" className="self-end hidden sm:flex"/>
         <RoadmapCard data={{...cards[9], img:"/assets/images/10.png"}} />
-      </div>
+      </div> */}
     </div>
   );
 };
