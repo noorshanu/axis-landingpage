@@ -45,12 +45,12 @@ export default function Navbar() {
               })}
             </Popover.Group>
             <a
-              href="/Wallet"
+              href="/"
               className="mr-8 hidden  space-x-2 whitespace-nowrap rounded-lg py-2 font-bold md:flex justify-center items-center w-24 text-sm text-black  bg-gradient-to-b from-[#ACFFB9] to-[#11FF37] sm:flex md:mr-0"
             >
-              Try AI
+              BETA APP
             </a>
-            <img src="/assets/icons/flag.png" className="sm:flex hidden " alt="" />
+ 
 
             <div className=" md:hidden">
               <Popover.Button className="bg-gradient-to-r from-[#acffb9] to-[#11ff37] inline-flex items-center justify-center  rounded-md  p-2">

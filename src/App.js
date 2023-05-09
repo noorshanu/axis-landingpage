@@ -15,7 +15,7 @@ import Footer from "./sections/Footer";
 function App() {
   return (
     <div className="bg-[#000] h-max">
-      <div className="main-bg sm:bg-[url('/public/assets/images/main-bg.svg')] bg-[url('/public/assets/images/hero-bg-sm.png')] h-[800px] sm:h-[732px] sm:bg-[length:75%_100%] bg-[length:100vw_100vh] bg-no-repeat ">
+      <div className="main-bg sm:bg-[url('/public/assets/images/main-bg.svg')] bg-[url('/public/assets/images/hero-bg-sm.png')] h-[800px] sm:h-[732px]  bg-[length:100vw_100vh] bg-no-repeat ">
         <div className="mx-auto  max-w-7xl px-4 sm:px-12 ">
           <Navbar />
           <Hero />
