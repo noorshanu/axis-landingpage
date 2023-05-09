@@ -1,17 +1,17 @@
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
-import { FireIcon } from "@heroicons/react/24/solid";
+// import { FireIcon } from "@heroicons/react/24/solid";
 import { Bars3Icon, XMarkIcon, WalletIcon } from "@heroicons/react/24/outline";
 
 let navItems = [
-  { label: "Our mission", route: "/", icon: "/assets/icons/business.png" },
+  { label: "Corporate Dossier", route: "/", icon: "/assets/icons/business.png" },
   {
-    label: "Market overview",
+    label: "Token Blueprint",
     route: "Market",
     icon: "/assets/icons/finance.png",
   },
-  { label: "Features", route: "Create", icon: "/assets/icons/interface.png" },
-  { label: "Roadmap", route: "Wallet", icon: "/assets/icons/cube.png" },
+  // { label: "Features", route: "Create", icon: "/assets/icons/interface.png" },
+  // { label: "Roadmap", route: "Wallet", icon: "/assets/icons/cube.png" }, 
 ];
 
 export default function Navbar() {
@@ -21,7 +21,7 @@ export default function Navbar() {
     <Popover className="relative bg-transparent z-10">
       <div className="">
         <div className="flex items-center justify-between  py-3 md:justify-start md:space-x-10">
-          <img src="/assets/images/logo.png" />
+          <img src="/assets/images/logo.svg" alt="" />
           <div className=" flex items-center justify-end md:flex md:flex-1 space-x-4 lg:w-0">
             <Popover.Group as="nav" className="hidden space-x-10 md:flex mr-36">
               {navItems.map((nav, i) => {
@@ -38,7 +38,7 @@ export default function Navbar() {
                      }
                   `}
                   >
-                    <img src={nav.icon} className="mr-2" />
+                    <img src={nav.icon} className="mr-2" alt="" />
                     <span>{nav.label}</span>
                   </a>
                 );
@@ -50,7 +50,7 @@ export default function Navbar() {
             >
               Try AI
             </a>
-            <img src="/assets/icons/flag.png" className="sm:flex hidden " />
+            <img src="/assets/icons/flag.png" className="sm:flex hidden " alt="" />
 
             <div className=" md:hidden">
               <Popover.Button className="bg-gradient-to-r from-[#acffb9] to-[#11ff37] inline-flex items-center justify-center  rounded-md  p-2">
@@ -83,7 +83,7 @@ export default function Navbar() {
             <div className="bg-black px-5 py-3">
               <div className="flex items-center justify-between">
                 <div className="focus:border:0 flex items-center justify-center space-x-1 focus:outline-0 focus:ring-0">
-                  <img src="/assets/images/logo.png" />
+                  <img src="/assets/images/logo.png"  alt=""/>
                 </div>
                 <div className="-mr-2">
                   <Popover.Button className=" inline-flex items-center justify-center rounded-md  p-2">
@@ -106,7 +106,7 @@ export default function Navbar() {
                       href={nav.route}
                       className={`rounded-md py-2 px-2 text-base font-medium  text-white hover:bg-gray-900
                         ${
-                          (!route && i == 0) || route == nav.label
+                          (!route && i === 0) || route == nav.label
                             ? " bg-gray-900 text-[#e250e5] "
                             : "text-white"
                         }
