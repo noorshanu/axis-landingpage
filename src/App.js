@@ -34,12 +34,12 @@ function App() {
         <Services />
 
         <div className=" pt-24 w-full sm:flex flex-col hidden ">
-          <img src="/assets/images/line.svg" className="w-full h-auto" />
-          <img src="/assets/images/line.svg" className="w-full h-auto mt-4" />
+          <img src="/assets/images/line.svg" className="w-full h-auto"  alt=""/>
+          <img src="/assets/images/line.svg" className="w-full h-auto mt-4" alt="" />
         </div>
       </div>
       <div className=" mt-12 py-3 px-3 w-full">
-        <img src="/assets/images/line.svg" className="w-full h-auto  sm:hidden flex " />
+        <img src="/assets/images/line.svg" className="w-full h-auto  sm:hidden flex " alt="" />
       </div>
 
       <div className="mx-auto  max-w-7xl px-4 sm:px-12 ">

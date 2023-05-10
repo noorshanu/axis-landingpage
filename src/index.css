@@ -62,3 +62,12 @@
   font-size: 22px;
 margin-top: 20px;
 }
+
+.sub-info{
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  text-align: center;
+}
+.border-right{
+  border-right: 1px solid #6d6c6c;
+}

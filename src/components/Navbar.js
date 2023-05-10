@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 // import { FireIcon } from "@heroicons/react/24/solid";
-import { Bars3Icon, XMarkIcon, WalletIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon,} from "@heroicons/react/24/outline";
 
 let navItems = [
   { label: "Corporate Dossier", route: "/", icon: "/assets/icons/business.png" },
@@ -32,7 +32,7 @@ export default function Navbar() {
                     className={`text-medium font-normal hover:text-[#e250e5] flex justify-center items-center
                      
                      ${
-                       (!route && i == 0) || route == nav.label
+                       (!route && i === 0) || route === nav.label
                          ? "border-b-2 border-white text-[#e250e5] "
                          : "text-white"
                      }
@@ -106,7 +106,7 @@ export default function Navbar() {
                       href={nav.route}
                       className={`rounded-md py-2 px-2 text-base font-medium  text-white hover:bg-gray-900
                         ${
-                          (!route && i === 0) || route == nav.label
+                          (!route && i === 0) || route === nav.label
                             ? " bg-gray-900 text-[#e250e5] "
                             : "text-white"
                         }
