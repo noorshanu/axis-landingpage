@@ -9,19 +9,19 @@ const Mission = () => {
   
   <div className="mx-auto sub-info">
     <div className="border-right">
-      <h1 className="text-[#6BFF83]">2650</h1>
+      <h1 className="text-[#6BFF83] font-monument font[400] text-3xl">2650</h1>
       <p className="text-[#fff]">Beta testers</p>
 
     </div>
 
     <div className="border-right">
-      <h1 className="text-[#6BFF83]" >2650</h1>
+      <h1 className="text-[#6BFF83] font-monument font[400] text-3xl" >2650</h1>
       <p className="text-[#fff]">Beta testers</p>
 
     </div>
 
     <div>
-      <h1 className="text-[#6BFF83]">2650</h1>
+      <h1 className="text-[#6BFF83] font-monument font[400] text-3xl">2650</h1>
       <p className="text-[#fff]">Beta testers</p>
 
     </div>
