@@ -19,7 +19,7 @@ let cards = [
 const Roadmap = () => {
   return (
     <div className="my-20 ">
-      <div className="flex  gap-2 sm:gap-12 rounded-[60px] sm:p-12 lg:py-24  bg-black  place-items-center">
+      <div className="flex   rounded-[60px]  bg-black  place-items-center">
         <RoadmapCard data={{ ...cards[0], img: "/assets/icons/new.png" }} />
         <img
           src="/assets/images/line.png"alt=""

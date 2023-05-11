@@ -7,7 +7,10 @@ const About = () => {
   <img src="assets/icons/side2.svg" alt="" className="side2"/>
 
   <div className=" text-center mt-32">
-  <img src="assets/icons/hero.png" alt="" className="mid m-auto"/>
+    <video autoPlay loop muted id="about_video">
+      <source src="assets/icons/about.webm"/>
+    </video>
+  {/* <img src="assets/icons/hero.png" alt="" className="mid m-auto"/> */}
 
   </div>
 

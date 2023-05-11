@@ -1,10 +1,10 @@
-import Services from "./sections/Services";
+// import Services from "./sections/Services";
 import Team from "./sections/Team";
 import Navbar from "./components/Navbar";
 import About from "./sections/About";
 import AxisNFTs from "./sections/AxisNFTs";
 import Hero from "./sections/Hero";
-import Market from "./sections/Market";
+// import Market from "./sections/Market";
 import Mission from "./sections/Mission";
 import MobileApp from "./sections/MobileApp";
 import Path from "./sections/Path";
@@ -32,19 +32,19 @@ function App() {
         Become a BETA tester now
         </button>
         <Roadmap />
-        <Services />
+        {/* <Services /> */}
 
-        <div className=" pt-24 w-full sm:flex flex-col hidden ">
+        {/* <div className=" pt-24 w-full sm:flex flex-col hidden ">
           <img src="/assets/images/line.svg" className="w-full h-auto"  alt=""/>
           <img src="/assets/images/line.svg" className="w-full h-auto mt-4" alt="" />
-        </div>
+        </div> */}
       </div>
       <div className=" mt-12 py-3 px-3 w-full">
         <img src="/assets/images/line.svg" className="w-full h-auto  sm:hidden flex " alt="" />
       </div>
 
       <div className="mx-auto  max-w-7xl px-4 sm:px-12 ">
-        <Market/>
+        {/* <Market/> */}
         <AxisNFTs/>
         <MobileApp/>
         <Path/>

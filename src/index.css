@@ -101,3 +101,8 @@ margin-top: 20px;
   z-index: 1;
   top: -196px;
 }
+
+#about_video{
+  margin: auto;
+  padding-bottom: 20px;
+}
