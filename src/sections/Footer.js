@@ -1,18 +1,23 @@
 import React from "react";
+import {AiOutlineTwitter} from 'react-icons/ai'
+import {FaTelegramPlane,FaDiscord} from 'react-icons/fa'
 
 const Footer = () => {
   return (
-    <div className="footer py-8 sm:bg-[#2D2D2D] ">
+    <div className="footer py-8  relative ">
+      <div className="side-green">
+        
+      </div>
       <div className="mx-auto  max-w-7xl px-4 sm:px-12 ">
         <div className="grid sm:grid-cols-2 grid-cols-1 md:grid-cols-4 gap-y-4">
           <div className="flex items-center">
             <div>
-              <img src="/assets/images/logo.png" />
+              <img src="/assets/images/logo.svg"  alt=""/>
               <h1 className="text-[#11FF37] font-monument text-2xl font-bold mt-5">
                 Join The DeFi Revolution
               </h1>
             </div>
-            <img src="/assets/images/line.png" />
+            <img src="/assets/images/line.png" alt="" />
           </div>
           <div className="sm:col-span-2 sm:px-12 py-6 flex justify-between">
             <div className="flex-1">
@@ -34,9 +39,9 @@ const Footer = () => {
               <h1 className="font-monument text-white font-medium">SOCIALS</h1>
               <div className="flex mt-5">
                 <ul className="text-white font-red-hat opacity-[0.57] font-light text-base space-y-4">
-                  <li>Twitter</li>
-                  <li>Telegram</li>
-                  <li>Discord</li>
+                  <li className="flex gap-2 items-center"><AiOutlineTwitter/>  Twitter</li>
+                  <li className="flex gap-2 items-center"><FaTelegramPlane/> Telegram</li>
+                  <li className="flex gap-2 items-center"><FaDiscord/> Discord</li>
                 </ul>
               </div>
             </div>
@@ -59,7 +64,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <img src="/assets/images/line-footer.svg" className="w-[100%] my-12 h-auto mx-auto b"/>
+        <img src="/assets/images/line-footer.svg" className="w-[100%] my-12 h-auto mx-auto b" alt=""/>
         <p className="font-red-hat text-white opacity-50 mx-auto text-center text-sm">
         Copyright @ 2023. All rights recieved
         </p>
