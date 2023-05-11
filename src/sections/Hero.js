@@ -21,7 +21,7 @@ const Hero = () => {
          
          
         </div>
-        <div className="hero-social-box absolute right-0">
+        <div className="hero-social-box absolute right-[-95px]">
           <a href='/'><FaTelegramPlane/></a>
           <a href='/'> <BsTwitter/></a>
           <a href='/'><BsDiscord/></a>

@@ -9,7 +9,7 @@ import Mission from "./sections/Mission";
 import MobileApp from "./sections/MobileApp";
 import Path from "./sections/Path";
 import Roadmap from "./sections/Roadmap";
-import FollowUs from "./sections/FollowUs";
+
 import Footer from "./sections/Footer";
 
 function App() {
@@ -21,14 +21,15 @@ function App() {
           <Hero />
         </div>
       </div>
-      <div className="mx-auto  max-w-7xl px-4 sm:px-12 ">
-        <About />
+      <About />
+      <div className="mx-auto  max-w-7xl  px-4 sm:px-12 ">
+      
         <Mission /> 
       </div>
 
       <div className="mx-auto  max-w-7xl px-4 sm:px-12 ">
         <button className="font-monument font-normal text-2xl text-white bg-[url('/public/assets/images/button.svg')] w-full h-[180px] my-12 rounded-lg cursor-pointer bg-cover">
-          Join Our Waitlist
+        Become a BETA tester now
         </button>
         <Roadmap />
         <Services />
@@ -49,7 +50,7 @@ function App() {
         <Path/>
         <Team/>
       </div>
-        <FollowUs/>
+      
         <Footer/>
 
     </div>

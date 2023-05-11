@@ -52,16 +52,33 @@
   background-size: cover;
 }
 
+.hero-social-box{
+  top: -40px;
+    display: flex;
+    flex-direction: column;
+ 
+}
+
 .hero-social-box a
 {
   color: #fff;
   background: linear-gradient(320.66deg, #2F353A 14.75%, #1C1F22 84.81%);
   filter: blur(0.5px);
   border-radius: 100px;
-  transform: rotate(-180deg);
+padding: 10px;
   font-size: 22px;
 margin-top: 20px;
 }
+.hero-social-box a:hover
+{
+  color: #000000;
+  background: linear-gradient(320.66deg, #11FF37 14.75%, #AEFFBB 84.81%);
+  filter: blur(0.5px);
+ 
+
+
+}
+
 
 .sub-info{
   display: grid;
@@ -70,4 +87,17 @@ margin-top: 20px;
 }
 .border-right{
   border-right: 1px solid #6d6c6c;
+}
+
+.side1{
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  top: -200px;
+}
+.side2{
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  top: -196px;
 }
