@@ -2,11 +2,11 @@
 import Team from "./sections/Team";
 import Navbar from "./components/Navbar";
 import About from "./sections/About";
-import AxisNFTs from "./sections/AxisNFTs";
+// import AxisNFTs from "./sections/AxisNFTs";
 import Hero from "./sections/Hero";
 // import Market from "./sections/Market";
 import Mission from "./sections/Mission";
-import MobileApp from "./sections/MobileApp";
+// import MobileApp from "./sections/MobileApp";
 import Path from "./sections/Path";
 import Roadmap from "./sections/Roadmap";
 
@@ -45,8 +45,8 @@ function App() {
 
       <div className="mx-auto  max-w-7xl px-4 sm:px-12 ">
         {/* <Market/> */}
-        <AxisNFTs/>
-        <MobileApp/>
+        {/* <AxisNFTs/>
+        <MobileApp/> */}
         <Path/>
         <Team/>
       </div>
