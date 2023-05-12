@@ -14,16 +14,30 @@ import Footer from "./sections/Footer";
 import Road from "./sections/road2";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from "react";
+import { useEffect,useState } from "react";
+import Loader from "./Loader";
 
 function App() {
+  const [loading,setLoading] =useState(false)
+  useEffect(()=>{
+    setLoading(true)
+    setTimeout(()=>{
+      setLoading(false)
+    },3000)
+  },[])
   useEffect(() => {
     AOS.init();
   }, [])
   return (
+   <>
+     {
+      loading ?
+      <Loader/>
+      :
+   
     <div className="bg-[#000] h-max">
       <div className="main-bg sm:bg-[url('/public/assets/images/main-bg.svg')] bg-[url('/public/assets/images/hero-bg-sm.png')] h-[800px] sm:h-[732px]  bg-[length:100vw_100vh] bg-no-repeat " data-aos="fade-down" data-aos-easing="linear"
-     data-aos-duration="2500">
+     data-aos-duration="1000">
         <div className="mx-auto  max-w-7xl px-4 sm:px-12 ">
           <Navbar />
           <Hero />
@@ -63,6 +77,9 @@ function App() {
         <Footer/>
 
     </div>
+     
+      }
+      </>
   );
 }
 
