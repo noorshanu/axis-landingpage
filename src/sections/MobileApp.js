@@ -3,7 +3,7 @@ import React from "react";
 const MobileApp = () => {
   return (
     <div className="grid sm:grid-cols-2 grid-cols-1 sm:mt-20 sm:space-x-16">
-      <img
+      <img alt=' '
         src="/assets/images/mobileApp.svg"
         className="w-full h-auto hidden sm:flex"
       />
@@ -24,7 +24,7 @@ const MobileApp = () => {
           Waiting List
         </button>
       </div>
-      <img
+      <img alt=' '
         src="/assets/images/mobileApp.svg"
         className="w-full h-auto mt-8 flex sm:hidden"
       />

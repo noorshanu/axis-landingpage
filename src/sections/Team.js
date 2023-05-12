@@ -1,7 +1,7 @@
 import React from "react";
-import TeamCard from "../components/TeamCard";
+// import TeamCard from "../components/TeamCard";
 
-let teams = [];
+// let teams = [];
 const Team = () => {
   return (
     <div className="mb-24" >

@@ -7,13 +7,19 @@ import Hero from "./sections/Hero";
 // import Market from "./sections/Market";
 import Mission from "./sections/Mission";
 // import MobileApp from "./sections/MobileApp";
-import Path from "./sections/Path";
+// import Path from "./sections/Path";
 import Roadmap from "./sections/Roadmap";
 
 import Footer from "./sections/Footer";
 import Road from "./sections/road2";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <div className="bg-[#000] h-max">
       <div className="main-bg sm:bg-[url('/public/assets/images/main-bg.svg')] bg-[url('/public/assets/images/hero-bg-sm.png')] h-[800px] sm:h-[732px]  bg-[length:100vw_100vh] bg-no-repeat ">

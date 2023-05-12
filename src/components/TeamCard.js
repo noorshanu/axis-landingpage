@@ -16,7 +16,7 @@ const TeamCard = ({ className }) => {
           is strong in the crypto world.
         </p>
       </div>
-      <img src="/assets/images/team-line.svg" className="h-full w-auto ml-8" />
+      <img src="/assets/images/team-line.svg" className="h-full w-auto ml-8"  alt=""/>
     </div>
   );
 };
