@@ -11,6 +11,7 @@ import Path from "./sections/Path";
 import Roadmap from "./sections/Roadmap";
 
 import Footer from "./sections/Footer";
+import Road from "./sections/road2";
 
 function App() {
   return (
@@ -47,7 +48,8 @@ function App() {
         {/* <Market/> */}
         {/* <AxisNFTs/>
         <MobileApp/> */}
-        <Path/>
+        <Road/>
+        {/* <Path/> */}
         <Team/>
       </div>
       
