@@ -46,7 +46,7 @@ export default function Navbar() {
             </Popover.Group>
             <a
               href="/"
-              className="mr-8 hidden  space-x-2 whitespace-nowrap rounded-lg py-2 font-bold md:flex justify-center items-center w-24 text-sm text-black  bg-gradient-to-b from-[#ACFFB9] to-[#11FF37] sm:flex md:mr-0"
+              className="mr-8 hidden  space-x-2 whitespace-nowrap rounded-lg py-2 font-bold md:flex justify-center items-center w-24 text-sm text-black  bg-gradient-to-b from-[#ACFFB9] to-[#11FF37] sm:flex md:mr-0 absolute right-0"
             >
               BETA APP
             </a>
