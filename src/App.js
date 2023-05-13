@@ -50,7 +50,7 @@ function App() {
         </div>
       </div>
       <About />
-      <div className="mx-auto  max-w-7xl  px-4 sm:px-12 ">
+      <div className="mx-auto  max-w-7xl  px-4 sm:px-2 ">
       
         <Mission /> 
       </div>
@@ -62,10 +62,7 @@ function App() {
        
         {/* <Services /> */}
 
-        {/* <div className=" pt-24 w-full sm:flex flex-col hidden ">
-          <img src="/assets/images/line.svg" className="w-full h-auto"  alt=""/>
-          <img src="/assets/images/line.svg" className="w-full h-auto mt-4" alt="" />
-        </div> */}
+ 
       </div>
       <Roadmap />
       <div className=" mt-12 py-3 px-3 w-full">

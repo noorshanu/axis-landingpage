@@ -24,14 +24,14 @@ const Footer = () => {
               <h1 className="font-monument text-white font-medium">PAGES</h1>
               <div className="flex justify-between mt-5">
                 <ul className="text-white font-red-hat opacity-[0.57] font-light text-base space-y-4">
-                  <li>Home</li>
-                  <li>Mission</li>
-                  <li>About Us</li>
+                  <li className="cursor-pointer">Home</li>
+                  <li  className="cursor-pointer">Mission</li>
+                  <li  className="cursor-pointer">About Us</li>
                 </ul>
                 <ul className="ml-6 text-white font-red-hat opacity-[0.57] font-light text-base space-y-4">
-                  <li>Features</li>
-                  <li>NFTs</li>
-                  <li>Mobile</li>
+                  <li className="cursor-pointer">Features</li>
+                  <li className="cursor-pointer">NFTs</li>
+                  <li className="cursor-pointer">Mobile</li>
                 </ul>
               </div>
             </div>
@@ -39,9 +39,9 @@ const Footer = () => {
               <h1 className="font-monument text-white font-medium">SOCIALS</h1>
               <div className="flex mt-5">
                 <ul className="text-white font-red-hat opacity-[0.57] font-light text-base space-y-4">
-                  <li className="flex gap-2 items-center"><AiOutlineTwitter/>  Twitter</li>
-                  <li className="flex gap-2 items-center"><FaTelegramPlane/> Telegram</li>
-                  <li className="flex gap-2 items-center"><FaDiscord/> Discord</li>
+                  <li className="flex gap-2 items-center cursor-pointer"><AiOutlineTwitter/>  Twitter</li>
+                  <li className="flex gap-2 items-center cursor-pointer "><FaTelegramPlane/> Telegram</li>
+                  <li className="flex gap-2 items-center cursor-pointer"><FaDiscord/> Discord</li>
                 </ul>
               </div>
             </div>
@@ -58,7 +58,7 @@ const Footer = () => {
                 placeholder="Enter your email"
                 className="bg-transparent border-none outline-none w-[70%] text-white text-sm"
               />
-              <button className="w-[30%] bg-white text-black font-barlow font-medium text-sm py-2 px-3">
+              <button className="w-[30%] bg-white text-black font-barlow font-medium text-sm py-2 px-3 cursor-pointer ">
                 Subscribe
               </button>
             </div>
