@@ -89,13 +89,13 @@
   position: absolute;
   left: 0;
   z-index: 1;
-  top: -200px;
+  top: -75px;
 }
 .side2 {
   position: absolute;
   right: 0;
   z-index: 1;
-  top: -196px;
+  top: -73px;
 }
 
 #about_video {
