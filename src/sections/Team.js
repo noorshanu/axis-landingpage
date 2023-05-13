@@ -1,34 +1,62 @@
 import React from "react";
-// import TeamCard from "../components/TeamCard";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Pagination, EffectCoverflow, Autoplay } from "swiper";
 
-// let teams = [];
+// Import Swiper styles
+import "swiper/swiper.scss";
+import "swiper/components/navigation/navigation.scss";
+import "swiper/components/pagination/pagination.scss";
+import "swiper/components/effect-coverflow/effect-coverflow.scss";
+
+SwiperCore.use([Autoplay, Pagination, EffectCoverflow]);
+
 const Team = () => {
   return (
-    <div className="mb-24" >
+    <div className="mb-24">
       <div className="mt-24 ">
         <div className=" col-span-2  py-2 ">
           <h1 className="capitalize text-4xl mb-3 text-[#6BFF83] font-monument text-center">
             our team
           </h1>
-      
         </div>
-        
-       
       </div>
-      {/* <div className="grid sm:grid-cols-2 grid-cols-1  md:grid-cols-4 gap-7 mt-7">
-        <TeamCard className={"border-t border-l-0 "} />
-        <TeamCard className={"border-t border-l-0 "} />
-        <TeamCard className={"border-t border-l-0 "} />
-        <TeamCard className={"border-t"} />
-        <TeamCard className={"border-t border-l-0 "} />
-        <TeamCard className={"border-t border-l-0 "} />
-        <TeamCard className={"border-t border-l-0 "} />
-        <TeamCard className={"border-t"} />
-      </div> */}
 
       <div className="m-auto text-center">
-        <img src="assets/images/team.png" alt="" className="m-auto"/>
+        <div className="App  mt-16 mb-6 sm:mt-20 ">
+          <Swiper
+            loop={true}
+            speed={1400}
+            autoplay={{
+              delay: 1,
+              disableOnInteraction: true,
+              // reverseDirection:true,
+            }}
+            initialSlide={2}
+            effect="coverflow"
+            coverflowEffect={{
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: false,
+            }}
+            slidesPerView={3}
+            centeredSlides={true}
+            style={{ height: "500px" }}
+          >
+            <SwiperSlide>
+              <img src="assets/images/main.png" alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="assets/images/main.png" alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="assets/images/main.png" alt="" />
+            </SwiperSlide>
+          </Swiper>
+        </div>
 
+        <img src="assets/images/team.png" alt="" className="m-auto" />
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ const About = () => {
     <video autoPlay loop muted id="about_video">
       <source src="assets/icons/about.webm"/>
     </video>
-  {/* <img src="assets/icons/hero.png" alt="" className="mid m-auto"/> */}
+
 
   </div>
 
