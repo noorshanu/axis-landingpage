@@ -59,7 +59,7 @@ function App() {
         <button className="font-monument font-normal text-2xl text-white bg-[url('/public/assets/images/button.svg')] w-full h-[180px] my-12 rounded-lg cursor-pointer bg-cover">
         Become a BETA tester now
         </button>
-        <Roadmap />
+       
         {/* <Services /> */}
 
         {/* <div className=" pt-24 w-full sm:flex flex-col hidden ">
@@ -67,6 +67,7 @@ function App() {
           <img src="/assets/images/line.svg" className="w-full h-auto mt-4" alt="" />
         </div> */}
       </div>
+      <Roadmap />
       <div className=" mt-12 py-3 px-3 w-full">
         <img src="/assets/images/line.svg" className="w-full h-auto  sm:hidden flex " alt="" />
       </div>
