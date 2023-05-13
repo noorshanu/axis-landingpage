@@ -36,7 +36,7 @@ function App() {
       :
    
     <div className="bg-[#000] h-max">
-      <div className="main-bg relative sm:bg-[url('/public/assets/images/main-bg.svg')] bg-[url('/public/assets/images/hero-bg-sm.png')] h-[800px] sm:h-[732px]  bg-[length:100vw_100vh] bg-no-repeat " data-aos="fade-down" data-aos-easing="linear"
+      <div className="main-bg relative sm:bg-[url('/public/assets/images/main-bg.svg')]  h-[800px] sm:h-[732px]  bg-[length:100vw_100vh] bg-no-repeat " data-aos="fade-down" data-aos-easing="linear"
      data-aos-duration="1000">
       <div className="overlays">
 
@@ -57,7 +57,7 @@ function App() {
 
       <div className="mx-auto  max-w-7xl px-4 sm:px-12 ">
         <button className="font-monument font-normal text-2xl text-white bg-[url('/public/assets/images/button.svg')] w-full h-[180px] my-12 rounded-lg cursor-pointer bg-cover">
-        Become a BETA tester now
+        Become a BETA tester now <form> <input type="email" placeholder="Email Addressm" className=""/> <a href="/" >Try Now</a></form>
         </button>
        
         {/* <Services /> */}
