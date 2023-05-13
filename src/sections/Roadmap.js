@@ -1,6 +1,6 @@
 import React from "react";
 import RoadmapCard from "../components/RoadmapCard";
-
+import Marquee from "react-fast-marquee";
 let cards = [
   {
     title: "Dex",
@@ -14,31 +14,43 @@ let cards = [
     title: "DAO",
     text: "Help the ecosystem to grow by contributing to the protocol",
   },
-  
 ];
 const Roadmap = () => {
   return (
     <div className="my-20 ">
-      <div className="flex   rounded-[60px]  bg-black  place-items-center">
-        <RoadmapCard data={{ ...cards[0], img: "/assets/icons/new.png" }} />
-        <img
-          src="/assets/images/line.png"alt=""
-          className="self-end hidden sm:flex"
-        />
-        <RoadmapCard data={{ ...cards[1], img: "/assets/icons/new.png" }} />
-        <img
-          src="/assets/images/line.png"
-          className="self-end hidden sm:flex" alt=""
-        />
-        <RoadmapCard data={{ ...cards[2], img: "/assets/icons/new.png"}} />
-        <img
-          src="/assets/images/line.png"
-          className="self-end hidden sm:flex" alt=""
-        />
+      {/* <div className="flex   rounded-[60px]  bg-black  place-items-center"> */}
+      <Marquee>
+      <RoadmapCard data={{ ...cards[0], img: "/assets/icons/new.png" }} />
+          <img
+            src="/assets/images/line.png"
+            alt=""
+            className="self-end hidden sm:flex"
+          />
        
-     
-      </div>
 
+      
+          <RoadmapCard data={{ ...cards[1], img: "/assets/icons/new.png" }} />
+          <img
+            src="/assets/images/line.png"
+            className="self-end hidden sm:flex"
+            alt=""
+          />
+       
+
+        
+          <RoadmapCard data={{ ...cards[2], img: "/assets/icons/new.png" }} />
+          <img
+            src="/assets/images/line.png"
+            className="self-end hidden sm:flex"
+            alt=""
+          />
+      </Marquee>
+        
+        
+
+    
+
+      {/* </div> */}
     </div>
   );
 };

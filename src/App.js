@@ -38,7 +38,7 @@ function App() {
     <div className="bg-[#000] h-max">
       <div className="main-bg relative sm:bg-[url('/public/assets/images/main-bg.svg')] bg-[url('/public/assets/images/hero-bg-sm.png')] h-[800px] sm:h-[732px]  bg-[length:100vw_100vh] bg-no-repeat " data-aos="fade-down" data-aos-easing="linear"
      data-aos-duration="1000">
-      <div className="overlay">
+      <div className="overlays">
 
       </div>
      <video autoPlay loop muted id="about_video">
