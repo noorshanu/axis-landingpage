@@ -60,7 +60,7 @@ const Mission = () => {
         <div className="mx-auto sub-info relative">
           <img
             src="assets/images/whiteLine.svg"
-            className="left-0 absolute"
+            className="left-0 absolute hidden sm:block"
             alt=""
           />
 
@@ -93,7 +93,7 @@ const Mission = () => {
           <img
             src="assets/images/whiteLine.svg"
             alt=""
-            className="right-0 absolute"
+            className="right-0 absolute hidden sm:block"
           />
         </div>
       </div>

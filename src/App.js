@@ -55,10 +55,10 @@ function App() {
         <Mission /> 
       </div>
 
-      <div className="mx-auto  max-w-7xl px-4 sm:px-12 ">
-        <button className="font-monument font-normal text-2xl text-white bg-[url('/public/assets/images/button.svg')] w-full h-[180px] my-12 rounded-lg cursor-pointer bg-cover">
-        Become a BETA tester now <form> <input type="email" placeholder="Email Addressm" className=""/> <a href="/" >Try Now</a></form>
-        </button>
+      <div className="mx-auto py-12  max-w-7xl px-4 sm:px-12 ">
+        <div className=" font-monument wishlist flex items-center m-auto font-normal text-xl justify-center gap-2 text-white  w-full h-[180px] my-12 rounded-lg cursor-pointer bg-cover">
+        Become a BETA tester now <form className="sub-form"> <input type="email" placeholder="Email Address" className="input-sub text-base px-6 py-5 "/> <a href="/" className="py-5 bg-black rounded-[64px] px-4 font-[300] text-[18px]" >Try Now</a></form>
+        </div>
        
         {/* <Services /> */}
 
