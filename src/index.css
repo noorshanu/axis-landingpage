@@ -125,9 +125,25 @@
 }
 
 @media (max-width:768px) {
+  .side1{
+    display: none;
+  }
+  .side2{
+    display: none;
+  }
 
   #about_video{
     object-fit: cover;
     height: 80vh;
+  }
+
+  #about_video2{
+    object-fit: cover;
+    height: auto;
+  }
+
+  .hero-social-box {
+   top: 1px;
+    flex-direction: row;
   }
 }
