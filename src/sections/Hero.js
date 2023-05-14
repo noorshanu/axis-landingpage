@@ -6,11 +6,21 @@ import React from "react";
 const Hero = () => {
   return (
       <div className="Hero  mx-[1.5rem] py-8 sm:pb-14 pb-[27rem] sm:mt-[21rem] relative " >
-        <div className="space-y-4 md:space-y-12 ">
-          <h1 className="font-extrabold font-monument text-white text-[2.2rem] leading-[45px]  sm:text-[48px] sm:leading-[60px]">
+        <div className="space-y-4 md:space-y-12 relative animate-left ">
+          <div className="w-fit h-fit relative">
+            {/* Hidden h1 (not displayed) */}
+           <h1 className='invisible font-extrabold font-monument text-white text-[2.2rem] leading-[45px]  sm:text-[48px] sm:leading-[60px]'>
             Shaping The Future of <br/> DeFi On{" "}
             <span className="text-[#6BFF83]"> Arbitrum</span>
-          </h1>
+            </h1>
+
+            {/* Animated h1 (displayed) */}
+           <h1 className='absolute top-0 font-extrabold font-monument text-white text-[2.2rem] leading-[45px]  sm:text-[48px] sm:leading-[60px]'>
+            Shaping The Future of <br/> DeFi On{" "}
+            <span className="text-[#6BFF83]"> Arbitrum</span>
+            </h1>
+          </div>
+         
           <p className="text-base text-[#FFFFFF]  sm:w-2/3 w-[84%]  font-red-hat md:text-sm md:leading-6 lg:text-lg lg:leading-8">
             LAxis Finance is the first
             <span className="text-[#6BFF83] mx-1">all-in-one</span>
