@@ -36,7 +36,7 @@ function App() {
       :
    
     <div className="bg-[#000] h-max">
-      <div className="main-bg relative sm:bg-[url('/public/assets/images/main-bg.svg')]  h-[800px] sm:h-[732px]  bg-[length:100vw_100vh] bg-no-repeat " data-aos="fade-down" data-aos-easing="linear"
+      <div className="main-bg relative sm:bg-[url('/public/assets/images/main-bg.svg')]  h-[656px] sm:h-[732px]  bg-[length:100vw_100vh] bg-no-repeat " data-aos="fade-down" data-aos-easing="linear"
      data-aos-duration="1000">
       <div className="overlays">
 

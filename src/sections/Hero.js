@@ -2,24 +2,20 @@ import {AiOutlineInstagram,AiFillYoutube} from 'react-icons/ai'
 import {BsDiscord,BsTwitter} from 'react-icons/bs'
 import {FaTelegramPlane} from 'react-icons/fa'
 import React from "react";
+import AnimatedComponent from '../components/AnimatedComponent';
 
 const Hero = () => {
   return (
-      <div className="Hero  mx-[1.5rem] py-8 sm:pb-14 pb-[27rem] sm:mt-[21rem] relative " >
-        <div className="space-y-4 md:space-y-12 relative animate-left ">
-          <div className="w-fit h-fit relative">
-            {/* Hidden h1 (not displayed) */}
-           <h1 className='invisible font-extrabold font-monument text-white text-[2.2rem] leading-[45px]  sm:text-[48px] sm:leading-[60px]'>
-            Shaping The Future of <br/> DeFi On{" "}
-            <span className="text-[#6BFF83]"> Arbitrum</span>
-            </h1>
 
-            {/* Animated h1 (displayed) */}
-           <h1 className='absolute top-0 font-extrabold font-monument text-white text-[2.2rem] leading-[45px]  sm:text-[48px] sm:leading-[60px]'>
+      <div className="Hero  mx-[1.5rem] pt-64 sm:pt-8 sm:py-8 sm:pb-14  sm:mt-[21rem] relative " >
+        <AnimatedComponent className="space-y-4 md:space-y-12 animate-left">
+          <h1 className="font-extrabold font-monument text-white text-[2.2rem] leading-[45px]  sm:text-[48px] sm:leading-[60px]">
             Shaping The Future of <br/> DeFi On{" "}
             <span className="text-[#6BFF83]"> Arbitrum</span>
-            </h1>
-          </div>
+          </h1>
+
+          
+          
          
           <p className="text-base text-[#FFFFFF]  sm:w-2/3 w-[84%]  font-red-hat md:text-sm md:leading-6 lg:text-lg lg:leading-8">
             LAxis Finance is the first
@@ -30,8 +26,8 @@ const Hero = () => {
           </p>
          
          
-        </div>
-        <div className="hero-social-box absolute right-[-95px]">
+        </AnimatedComponent>
+        <div className="hero-social-box relative sm:absolute  sm:right-[-95px] animate-top-bottom">
           <a href='/'><FaTelegramPlane/></a>
           <a href='/'> <BsTwitter/></a>
           <a href='/'><BsDiscord/></a>
@@ -39,7 +35,7 @@ const Hero = () => {
           <a href='/'><AiFillYoutube/></a>
          
         </div>
-      </div>
+    </div>
   );
 };
 
