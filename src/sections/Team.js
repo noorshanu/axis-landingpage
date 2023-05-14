@@ -42,6 +42,21 @@ const Team = () => {
             }}
             slidesPerView={3}
             centeredSlides={true}
+            breakpoints= {{
+              340: {
+                slidesPerView: 1
+              },
+              768: {
+                slidesPerView: 1
+              },
+              1024: {
+                slidesPerView: 3
+              },
+              1560: {
+                slidesPerView: 3
+              }
+            }
+            }
             style={{ height: "500px" }}
           >
             <SwiperSlide>

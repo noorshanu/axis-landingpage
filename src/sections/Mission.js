@@ -32,6 +32,21 @@ const Mission = () => {
           }}
           slidesPerView={4}
           centeredSlides={true}
+          breakpoints= {{
+            340: {
+              slidesPerView: 3
+            },
+            768: {
+              slidesPerView: 3
+            },
+            1024: {
+              slidesPerView: 4
+            },
+            1560: {
+              slidesPerView: 4
+            }
+          }
+          }
           style={{ height: "500px" }}
         >
           <SwiperSlide>
