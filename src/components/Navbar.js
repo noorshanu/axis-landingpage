@@ -19,7 +19,7 @@ export default function Navbar() {
   return (
     // bg-[#14141f]
     <Popover className="relative bg-transparent z-10">
-      <div className="">
+
         <div className="flex items-center justify-between  py-3 md:justify-start md:space-x-10 animate-top-left">
           <img src="/assets/images/logo.svg" className="" alt="" />
           <div className=" flex items-center justify-center md:flex md:flex-1 space-x-4 lg:w-0">
@@ -64,7 +64,7 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-      </div>
+     
 
       <Transition
         as={Fragment}

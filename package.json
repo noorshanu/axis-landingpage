@@ -12,6 +12,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-fast-marquee": "^1.5.2",
+    "react-glitch-effect": "^3.1.0",
+    "react-glitch-text": "^0.1.81",
     "react-icons": "^4.8.0",
     "react-scripts": "5.0.1",
     "sass": "^1.62.1",

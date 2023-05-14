@@ -6,7 +6,6 @@ import SwiperCore, { Pagination, EffectCoverflow, Autoplay } from "swiper";
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
-import "swiper/components/effect-coverflow/effect-coverflow.scss";
 
 SwiperCore.use([Autoplay, Pagination, EffectCoverflow]);
 
