@@ -128,8 +128,20 @@
   left: 0;
   right: 0;
 }
+.input-sub{
+  background: rgba(0, 0, 0, 0.15) !important;
+border-radius: 49px;
+border: 1px solid transparent;
+}
 
+.wishlist{
+  background: linear-gradient(233.14deg, #11FF37 -41.32%, #000000 -13.59%, #11FF37 122.78%, #000000 180.56%);
+border-radius: 40px;
+}
 @media (max-width:768px) {
+  .wishlist{
+ flex-direction: column;
+  }
   .side1{
     display: none;
   }
