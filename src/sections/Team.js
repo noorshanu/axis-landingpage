@@ -53,17 +53,7 @@ const Team = () => {
             <SwiperSlide>
               <img src="assets/team/team3.png" alt="" />
             </SwiperSlide>
-            <SwiperSlide>
-              <img src="assets/team/team3.png" alt="" />
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <img src="assets/team/team2.png" alt="" />
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <img src="assets/team/team1.png" alt="" />
-            </SwiperSlide>
+          
           </Swiper>
         </div>
 
