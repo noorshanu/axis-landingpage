@@ -34,29 +34,40 @@ const Team = () => {
             initialSlide={2}
             effect="coverflow"
             coverflowEffect={{
-              rotate: 50,
+              rotate: 0,
               stretch: 0,
               depth: 100,
-              modifier: 1,
-              slideShadows: false,
+              modifier: 3,
+              slideShadows: true
             }}
             slidesPerView={3}
             centeredSlides={true}
             style={{ height: "500px" }}
           >
             <SwiperSlide>
-              <img src="assets/images/main.png" alt="" />
+              <img src="assets/team/team1.png" alt="" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="assets/images/main.png" alt="" />
+              <img src="assets/team/team2.png" alt="" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="assets/images/main.png" alt="" />
+              <img src="assets/team/team3.png" alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="assets/team/team3.png" alt="" />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <img src="assets/team/team2.png" alt="" />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <img src="assets/team/team1.png" alt="" />
             </SwiperSlide>
           </Swiper>
         </div>
 
-        <img src="assets/images/team.png" alt="" className="m-auto" />
+     
       </div>
     </div>
   );
