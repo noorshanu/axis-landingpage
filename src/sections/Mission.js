@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination, EffectCoverflow, Autoplay } from "swiper";
 
@@ -6,10 +6,26 @@ import SwiperCore, { Pagination, EffectCoverflow, Autoplay } from "swiper";
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
+import { useRef } from "react";
+import { useEffect } from "react";
+import useIsInViewPort from "../hooks/useIsInViewPort";
 
 SwiperCore.use([Autoplay, Pagination, EffectCoverflow]);
 
 const Mission = () => {
+  let [showAnimation, setShowAnimation] = useState(false);
+  const ref = useRef();
+  const isInViewPort = useIsInViewPort(ref);
+
+  useEffect(() => {
+    if (isInViewPort) {
+      setShowAnimation(true);
+      setTimeout(() => {
+        setShowAnimation(false);
+      }, 1500);
+    }
+  }, [isInViewPort]);
+
   return (
     <>
       <div className="App  mt-16 mb-6 sm:mt-20 ">
@@ -32,21 +48,20 @@ const Mission = () => {
           }}
           slidesPerView={4}
           centeredSlides={true}
-          breakpoints= {{
+          breakpoints={{
             340: {
-              slidesPerView: 3
+              slidesPerView: 3,
             },
             768: {
-              slidesPerView: 3
+              slidesPerView: 3,
             },
             1024: {
-              slidesPerView: 4
+              slidesPerView: 4,
             },
             1560: {
-              slidesPerView: 4
-            }
-          }
-          }
+              slidesPerView: 4,
+            },
+          }}
           style={{ height: "500px" }}
         >
           <SwiperSlide>
@@ -71,7 +86,7 @@ const Mission = () => {
       </div>
 
       <div className="  mt-16 sm:mt-20 ">
-        <div className="mx-auto sub-info relative">
+        <div className="mx-auto sub-info relative" ref={ref}>
           <img
             src="assets/images/whiteLine.svg"
             className="left-0 absolute hidden sm:block"
@@ -79,28 +94,52 @@ const Mission = () => {
           />
 
           <div className="border-right">
-            <h1 className="text-[#6BFF83] font-monument font[400] text-3xl">
+            <h1
+              className={`${
+                showAnimation ? "text-flicker-in-glow" : "text-[#6BFF83]"
+              } font-monument font[400] text-3xl`}
+            >
               2650
             </h1>
-            <p className="text-[#fff] font-red-hat font-[500] text-xl mt-6">
+            <p
+              className={`${
+                showAnimation ? " text-flicker-in-glow-p " : "text-[#fff]"
+              }   font-red-hat font-[500] text-xl mt-6`}
+            >
               Beta testers
             </p>
           </div>
 
           <div className="border-right">
-            <h1 className="text-[#6BFF83] font-monument font[400] text-3xl">
+            <h1
+              className={`${
+                showAnimation ? "text-flicker-in-glow-2" : "text-[#6BFF83]"
+              }   font-monument font[400] text-3xl`}
+            >
               2650
             </h1>
-            <p className="text-[#fff] font-red-hat font-[500] text-xl mt-6">
+            <p
+              className={` ${
+                showAnimation ? " text-flicker-in-glow-p-2 " : "text-[#fff]"
+              } font-red-hat font-[500] text-xl mt-6`}
+            >
               Beta testers
             </p>
           </div>
 
           <div>
-            <h1 className="text-[#6BFF83] font-monument font[400] text-3xl">
+            <h1
+              className={`${
+                showAnimation ? "text-flicker-in-glow" : "text-[#6BFF83]"
+              }  font-monument font[400] text-3xl`}
+            >
               2650
             </h1>
-            <p className="text-[#fff] font-red-hat font-[500] text-xl mt-6">
+            <p
+              className={`${
+                showAnimation ? " text-flicker-in-glow-p " : "text-[#fff]"
+              }  font-red-hat font-[500] text-xl mt-6`}
+            >
               Beta testers
             </p>
           </div>

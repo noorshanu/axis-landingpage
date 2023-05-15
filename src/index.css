@@ -758,3 +758,129 @@
     transform: scale(1);
   }
 }
+
+.text-flicker-in-glow {
+	-webkit-animation: text-flicker-in-glow 0.5s linear infinite both;
+	        animation: text-flicker-in-glow 0.5s linear infinite both;
+}
+
+
+
+@keyframes text-flicker-in-glow {
+  0%{
+    color: #6BFF83;
+  }
+  10%{
+    color: rgba(73, 73, 73, 0.55);
+  }
+  30%{
+    color: #6BFF83;
+  }
+  40%{
+    color: rgba(73, 73, 73, 0.55);
+  }
+  60%{
+    color: #6BFF83;
+  }
+  70%{
+    color: rgba(73, 73, 73, 0.55);
+  }
+  100%{
+    color: #6BFF83;
+  }
+}
+.text-flicker-in-glow-p {
+	-webkit-animation: text-flicker-in-glow-p 0.5s linear infinite both;
+	        animation: text-flicker-in-glow-p 0.5s linear infinite both;
+}
+
+
+
+@keyframes text-flicker-in-glow-p {
+  0%{
+    color: #000000;
+  }
+  10%{
+    color: white;
+  }
+  30%{
+    color: #000000;
+  }
+  40%{
+    color: white;
+  }
+  60%{
+    color: #000000;
+  }
+  70%{
+    color: white;
+  }
+  100%{
+    color: white;
+  }
+}
+
+
+.text-flicker-in-glow-p-2 {
+	-webkit-animation: text-flicker-in-glow-p 0.5s linear infinite both;
+	        animation: text-flicker-in-glow-p 0.5s linear infinite both;
+}
+
+
+
+@keyframes text-flicker-in-glow-p-2 {
+  0%{
+    color: #fff;
+  }
+  10%{
+    color: black;
+  }
+  30%{
+    color: #fff;
+  }
+  40%{
+    color: black;
+  }
+  60%{
+    color: #fff;
+  }
+  70%{
+    color: black;
+  }
+  100%{
+    color: white;
+  }
+}
+.text-flicker-in-glow-2 {
+	-webkit-animation: text-flicker-in-glow-2 0.5s linear infinite both;
+	        animation: text-flicker-in-glow-2 0.5s linear infinite both;
+}
+
+
+
+@keyframes text-flicker-in-glow-2 {
+  0%{
+   color: rgba(73, 73, 73, 0.55);
+  }
+  10%{
+    color: #6BFF83;
+  }
+  30%{
+   color: rgba(73, 73, 73, 0.55);
+  }
+  40%{
+    color: #6BFF83;
+  }
+  60%{
+   color: rgba(73, 73, 73, 0.55);
+  }
+  70%{
+    color: #6BFF83;
+  }
+  80%{
+   color: rgba(73, 73, 73, 0.55);
+  }
+  100%{
+    color: #6BFF83;
+  }
+}
