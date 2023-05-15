@@ -1,17 +1,21 @@
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 // import { FireIcon } from "@heroicons/react/24/solid";
-import { Bars3Icon, XMarkIcon,} from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 let navItems = [
-  { label: "Corporate Dossier", route: "/", icon: "/assets/icons/business.png" },
+  {
+    label: "Corporate Dossier",
+    route: "/",
+    icon: "/assets/icons/business.png",
+  },
   {
     label: "Token Blueprint",
     route: "Market",
     icon: "/assets/icons/finance.png",
   },
   // { label: "Features", route: "Create", icon: "/assets/icons/interface.png" },
-  // { label: "Roadmap", route: "Wallet", icon: "/assets/icons/cube.png" }, 
+  // { label: "Roadmap", route: "Wallet", icon: "/assets/icons/cube.png" },
 ];
 
 export default function Navbar() {
@@ -19,52 +23,50 @@ export default function Navbar() {
   return (
     // bg-[#14141f]
     <Popover className="relative bg-transparent z-10">
-
-        <div className="flex items-center justify-between  py-3 md:justify-start md:space-x-10 animate-top-left">
-          <img src="/assets/images/logo.svg" className="" alt="" />
-          <div className=" flex items-center justify-center md:flex md:flex-1 space-x-4 lg:w-0">
-            <Popover.Group as="nav" className="hidden space-x-10 md:flex mr-36">
-              {navItems.map((nav, i) => {
-                return (
-                  <a
-                    key={i}
-                    href={nav.route}
-                    className={`text-medium font-normal hover:text-[#e250e5] flex justify-center items-center
+      <div className="flex items-center justify-between  py-3 md:justify-start md:space-x-10 animate-top-left">
+        <img src="/assets/images/logo.svg" className="" alt="" />
+        <div className=" flex items-center justify-center md:flex md:flex-1 space-x-4 lg:w-0">
+          <Popover.Group as="nav" className="hidden space-x-10 md:flex mr-36">
+            {navItems.map((nav, i) => {
+              return (
+                <a
+                  key={i}
+                  href={nav.route}
+                  className={`text-medium font-normal hover:text-[#11ff39be]
                      
-                     ${
-                       (!route && i === 0) || route === nav.label
-                         ? "border-b-2 border-white text-[#e250e5] "
-                         : "text-white"
-                     }
+                     ${route == nav.route ? " text-[#11ff37] " : "text-white"}
                   `}
-                  >
+                >
+                  <div className=" flex justify-center items-center">
                     <img src={nav.icon} className="mr-2" alt="" />
                     <span>{nav.label}</span>
-                  </a>
-                );
-              })}
-            </Popover.Group>
-            <a
-              href="/"
-              className="mr-8 hidden  space-x-2 whitespace-nowrap rounded-lg py-2 font-bold md:flex justify-center items-center w-24 text-sm text-black  bg-gradient-to-b from-[#ACFFB9] to-[#11FF37] sm:flex md:mr-0 absolute right-0"
-            >
-              BETA APP
-            </a>
- 
+                  </div>
+                  <div
+                    className={`w-full h-[2px] bg-gradient-to-r from-[#acffb9] to-[#11ff37]  hover:visible  mt-1 ${
+                      route === nav.route
+                        ? "visible scale-up-center"
+                        : "invisible hover:visible "
+                    }`}
+                  />
+                </a>
+              );
+            })}
+          </Popover.Group>
+          <a
+            href="/"
+            className="mr-8 hidden  space-x-2 whitespace-nowrap rounded-lg py-2 font-bold md:flex justify-center items-center w-24 text-sm text-black  bg-gradient-to-b from-[#ACFFB9] to-[#11FF37] sm:flex md:mr-0 absolute right-0"
+          >
+            BETA APP
+          </a>
 
-            <div className=" md:hidden">
-              <Popover.Button className="bg-gradient-to-r from-[#acffb9] to-[#11ff37] inline-flex items-center justify-center  rounded-md  p-2">
-                <span className="sr-only">Open menu</span>
-                <Bars3Icon
-                  className="h-6 w-6"
-                  color="black"
-                  aria-hidden="true"
-                />
-              </Popover.Button>
-            </div>
+          <div className=" md:hidden">
+            <Popover.Button className="bg-gradient-to-r from-[#acffb9] to-[#11ff37] inline-flex items-center justify-center  rounded-md  p-2">
+              <span className="sr-only">Open menu</span>
+              <Bars3Icon className="h-6 w-6" color="black" aria-hidden="true" />
+            </Popover.Button>
           </div>
         </div>
-     
+      </div>
 
       <Transition
         as={Fragment}
@@ -83,7 +85,7 @@ export default function Navbar() {
             <div className="bg-black px-5 py-3">
               <div className="flex items-center justify-between">
                 <div className="focus:border:0 flex items-center justify-center space-x-1 focus:outline-0 focus:ring-0">
-                  <img src="/assets/images/logo.png"  alt=""/>
+                  <img src="/assets/images/logo.png" alt="" />
                 </div>
                 <div className="-mr-2">
                   <Popover.Button className=" inline-flex items-center justify-center rounded-md  p-2">
@@ -107,7 +109,7 @@ export default function Navbar() {
                       className={`rounded-md py-2 px-2 text-base font-medium  text-white hover:bg-gray-900
                         ${
                           (!route && i === 0) || route === nav.label
-                            ? " bg-gray-900 text-[#e250e5] "
+                            ? " bg-gray-900 text-[#11ff37] "
                             : "text-white"
                         }
                         `}
@@ -118,7 +120,6 @@ export default function Navbar() {
                   );
                 })}
               </div>
-            
             </div>
           </div>
         </Popover.Panel>
