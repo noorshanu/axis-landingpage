@@ -14,15 +14,18 @@ SwiperCore.use([Autoplay, Pagination, EffectCoverflow]);
 
 const Mission = () => {
   let [showAnimation, setShowAnimation] = useState(false);
+  let [playAnimation, setPlayAnimation] = useState(false);
+
   const ref = useRef();
-  const isInViewPort = useIsInViewPort(ref);
+  let isInViewPort = useIsInViewPort(ref);
 
   useEffect(() => {
-    if (isInViewPort) {
+    if (isInViewPort && !playAnimation) {
       setShowAnimation(true);
+      setPlayAnimation(true);
       setTimeout(() => {
         setShowAnimation(false);
-      }, 1500);
+      }, 800);
     }
   }, [isInViewPort]);
 

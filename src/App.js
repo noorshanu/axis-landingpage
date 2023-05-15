@@ -12,78 +12,73 @@ import Roadmap from "./sections/Roadmap";
 
 import Footer from "./sections/Footer";
 import Road from "./sections/road2";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect,useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect, useRef, useState } from "react";
 import Loader from "./Loader";
+import useIsInViewport from "./hooks/useIsInViewPort";
+import Newalater from "./Newalater";
 
 function App() {
-  const [loading,setLoading] =useState(false)
-  useEffect(()=>{
-    setLoading(true)
-    setTimeout(()=>{
-      setLoading(false)
-    },3000)
-  },[])
+
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
     AOS.init();
-  }, [])
+  }, []);
+
   return (
-   <>
-     {
-      loading ?
-      <Loader/>
-      :
-   
-    <div className="bg-[#000] h-max">
-      <div className="main-bg relative sm:bg-[url('/public/assets/images/main-bg.svg')]  h-[656px] sm:h-[732px]  bg-[length:100vw_100vh] bg-no-repeat " data-aos="fade-down" data-aos-easing="linear"
-     data-aos-duration="1000">
-      <div className="overlays">
+    <>
+      {loading ? (
+        <Loader />
+      ) : (
+        <div className="bg-[#000] h-max">
+          <div
+            className="main-bg relative sm:bg-[url('/public/assets/images/main-bg.svg')]  h-[656px] sm:h-[732px]  bg-[length:100vw_100vh] bg-no-repeat "
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
+            <div className="overlays"></div>
+            <video autoPlay loop muted id="about_video">
+              <source src="assets/hero.mp4" />
+            </video>
+            <div className="mx-auto  max-w-7xl px-4 sm:px-12 absolute top-3 left-0 right-0  ">
+              <Navbar />
+              <Hero />
+            </div>
+          </div>
+          <About />
+          <div className="mx-auto  max-w-7xl  px-4 sm:px-2 ">
+            <Mission />
+          </div>
 
-      </div>
-     <video autoPlay loop muted id="about_video">
-      <source src="assets/hero.mp4"/>
-    </video>
-        <div className="mx-auto  max-w-7xl px-4 sm:px-12 absolute top-3 left-0 right-0  ">
-          <Navbar />
-          <Hero />
-        </div>
-      </div>
-      <About />
-      <div className="mx-auto  max-w-7xl  px-4 sm:px-2 ">
-      
-        <Mission /> 
-      </div>
+          <Newalater/>
+          <Roadmap />
+          <div className=" mt-12 py-3 px-3 w-full">
+            <img
+              src="/assets/images/line.svg"
+              className="w-full h-auto  sm:hidden flex "
+              alt=""
+            />
+          </div>
 
-      <div className="mx-auto py-12  max-w-7xl px-4 sm:px-12 ">
-        <div className=" font-monument wishlist flex items-center m-auto font-normal text-xl justify-center gap-2 text-white  w-full h-[180px] my-12 rounded-lg cursor-pointer bg-cover">
-        Become a BETA tester now <form className="sub-form"> <input type="email" placeholder="Email Address" className="input-sub text-base px-6 py-5 "/> <a href="/" className="py-5 bg-black rounded-[64px] px-4 font-[300] text-[18px]" >Try Now</a></form>
-        </div>
-       
-        {/* <Services /> */}
-
- 
-      </div>
-      <Roadmap />
-      <div className=" mt-12 py-3 px-3 w-full">
-        <img src="/assets/images/line.svg" className="w-full h-auto  sm:hidden flex " alt="" />
-      </div>
-
-      <div className="mx-auto  max-w-7xl px-4 sm:px-12 ">
-        {/* <Market/> */}
-        {/* <AxisNFTs/>
+          <div className="mx-auto  max-w-7xl px-4 sm:px-12 ">
+            {/* <Market/> */}
+            {/* <AxisNFTs/>
         <MobileApp/> */}
-        <Road/>
-        {/* <Path/> */}
-        <Team/>
-      </div>
-      
-        <Footer/>
+            <Road />
+            {/* <Path/> */}
+            <Team />
+          </div>
 
-    </div>
-     
-      }
-      </>
+          <Footer />
+        </div>
+      )}
+    </>
   );
 }
 
