@@ -113,7 +113,7 @@ const Road = () => {
 
 
       </div>
-      <div className="box_6 absolute left-[75.3em] top-[243.5em]">
+      <div className="box_6 absolute left-[75.3em] top-[225.5em]">
           <div className="relative">
             <img src="assets/images/roadmap-frame.svg" alt=""  className="h-[230px]"/>
 
