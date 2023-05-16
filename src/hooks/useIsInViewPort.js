@@ -5,8 +5,13 @@ const useIsInViewport = (ref) => {
 
   const observer = useMemo(
     () =>
-      new IntersectionObserver(([entry]) =>
-        setIsIntersecting(entry.isIntersecting)
+      new IntersectionObserver(([entry]) =>{
+        if (!isIntersecting && entry.intersectionRatio) {
+          setIsIntersecting(entry.isIntersecting)
+        }
+      }
+        
+        
       ),
     []
   );
