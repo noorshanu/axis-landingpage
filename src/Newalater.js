@@ -19,7 +19,7 @@ const Newalater = () => {
 
   return (
     <div className="mx-auto py-12  max-w-7xl px-4 sm:px-12 ">
-      <div className=" font-monument wishlist flex items-center m-auto font-normal text-xl justify-center gap-2 text-white  w-full h-[180px] my-12 rounded-lg cursor-pointer bg-cover">
+      <div className=" font-monument wishlist flex items-center m-auto font-normal text-xl justify-center gap-2 text-white  w-full h-[260px] sm:h-[180px] my-12 rounded-lg cursor-pointer bg-cover">
         <span className={`${showAnimation ? "slide-left" : ""}`} ref={ref}>
           Become a BETA tester now
         </span>{" "}
