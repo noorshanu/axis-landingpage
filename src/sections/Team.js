@@ -12,8 +12,8 @@ SwiperCore.use([Autoplay, Pagination, EffectCoverflow]);
 
 const Team = () => {
   return (
-    <div className="mb-24">
-      <div className="mt-24 ">
+    <div className="mb-24 mt-[24rem]">
+      <div className="mt-12 ">
         <div className=" col-span-2  py-2 ">
           <h1 className="capitalize text-4xl mb-3 text-[#6BFF83] font-monument text-center">
             our team
@@ -25,7 +25,7 @@ const Team = () => {
         <div className="App  mt-16 mb-6 sm:mt-20 ">
           <Swiper
             loop={true}
-            speed={1400}
+            speed={1700}
             autoplay={{
               delay: 1,
               disableOnInteraction: true,
