@@ -35,7 +35,7 @@ function App() {
       {loading ? (
         <Loader />
       ) : (
-        <div className="bg-[#000] h-max">
+        <div className="bg-[#000] h-max w-screen overflow-x-hidden">
           <div
             className="main-bg relative sm:bg-[url('/public/assets/images/main-bg.svg')]  h-[656px] sm:h-[732px]  bg-[length:100vw_100vh] bg-no-repeat "
             data-aos="fade-down"

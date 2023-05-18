@@ -5,6 +5,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&display=swap");
 
+body{
+  width: 100vw;
+  overflow-x: hidden;
+}
 .font-red-hat {
   font-family: "Red Hat Display", sans-serif;
 }
@@ -209,6 +213,7 @@
     flex-direction: row;
   }
 }
+
 
 
 
@@ -775,8 +780,8 @@
 }
 
 .text-flicker-in-glow {
-	-webkit-animation: text-flicker-in-glow 0.5s linear infinite both;
-	        animation: text-flicker-in-glow 0.5s linear infinite both;
+    -webkit-animation: text-flicker-in-glow 0.5s linear infinite both;
+            animation: text-flicker-in-glow 0.5s linear infinite both;
 }
 
 
@@ -805,8 +810,8 @@
   }
 }
 .text-flicker-in-glow-p {
-	-webkit-animation: text-flicker-in-glow-p 0.5s linear infinite both;
-	        animation: text-flicker-in-glow-p 0.5s linear infinite both;
+    -webkit-animation: text-flicker-in-glow-p 0.5s linear infinite both;
+            animation: text-flicker-in-glow-p 0.5s linear infinite both;
 }
 
 
@@ -837,8 +842,8 @@
 
 
 .text-flicker-in-glow-p-2 {
-	-webkit-animation: text-flicker-in-glow-p 0.5s linear infinite both;
-	        animation: text-flicker-in-glow-p 0.5s linear infinite both;
+    -webkit-animation: text-flicker-in-glow-p 0.5s linear infinite both;
+            animation: text-flicker-in-glow-p 0.5s linear infinite both;
 }
 
 
@@ -867,8 +872,8 @@
   }
 }
 .text-flicker-in-glow-2 {
-	-webkit-animation: text-flicker-in-glow-2 0.5s linear infinite both;
-	        animation: text-flicker-in-glow-2 0.5s linear infinite both;
+    -webkit-animation: text-flicker-in-glow-2 0.5s linear infinite both;
+            animation: text-flicker-in-glow-2 0.5s linear infinite both;
 }
 
 
@@ -901,8 +906,8 @@
 }
 
 .slide-left {
-	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
-	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+    -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+            animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
 }
 
  @-webkit-keyframes slide-left {
@@ -927,8 +932,8 @@
 }
 
 .slide-right {
-	-webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
-	        animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+    -webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+            animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
 }
 
  @-webkit-keyframes slide-right {
@@ -955,19 +960,19 @@
 
 
 .slide-left-footer {
-	-webkit-animation: slide-left-footer 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both;
-	        animation: slide-left-footer 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both;
+    -webkit-animation: slide-left-footer 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both;
+            animation: slide-left-footer 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both;
 }
 
 
 .slide-left-footer-1 {
-	-webkit-animation: slide-left-footer 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both;
-	        animation: slide-left-footer 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both;
+    -webkit-animation: slide-left-footer 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both;
+            animation: slide-left-footer 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both;
 }
 
 .slide-left-footer-2 {
-	-webkit-animation: slide-left-footer 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both;
-	        animation: slide-left-footer 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both;
+    -webkit-animation: slide-left-footer 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both;
+            animation: slide-left-footer 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both;
 }
 
 
