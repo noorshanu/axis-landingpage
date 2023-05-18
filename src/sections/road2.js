@@ -6,14 +6,14 @@ const Road = () => {
       <h1 className=" mt-32 mb-12 font-monument text-[#6BFF83] text-2xl font-bold sm:text-3xl text-center mx-auto">
         Roadmap
       </h1>
-      <div className="sm:flex relative text-center hidden">
+      <div className="sm:flex relative text-center hidden ">
         <img src="assets/images/roadmap-line.svg" alt="" />
 
-        <div className="box_1 absolute left-[-64px] top-[126px]">
+        <div className="box_1 absolute overflow-x-hidden sm:overflow-x-visible left-[-64px] top-[126px]">
           <div className="relative">
             <img src="assets/images/roadmap-frame.svg" alt=""  className="h-[230px]"/>
 
-            <div className="roadmap-content absolute">
+            <div className="roadmap-content absolute overflow-x-hidden sm:overflow-x-visible">
               <h1 className="text-white font-organetto font-semibold text-3xl">Q3</h1>
 
               <p className="text-white font-red-hat text-[12px] font-normal">Launching Axis Finance</p>
@@ -28,11 +28,11 @@ const Road = () => {
         </div>
 
 
-        <div className="box_2 absolute left-[123px] top-[24.5rem]">
+        <div className="box_2 absolute overflow-x-hidden sm:overflow-x-visible left-[123px] top-[24.5rem]">
           <div className="relative">
             <img src="assets/images/roadmap-frame.svg" alt=""  className="h-[230px]"/>
 
-            <div className="roadmap-content absolute">
+            <div className="roadmap-content absolute overflow-x-hidden sm:overflow-x-visible">
               <h1 className="text-white font-organett font-semibold text-3xl">Q4</h1>
 
               <p className="text-white font-red-hat text-[12px] font-normal">Launching Axis Finance</p>
@@ -47,11 +47,11 @@ const Road = () => {
         </div>
 
 
-        <div className="box_3 absolute left-[21.6em] top-[8em]">
+        <div className="box_3 absolute overflow-x-hidden sm:overflow-x-visible left-[21.6em] top-[8em]">
           <div className="relative">
             <img src="assets/images/roadmap-frame.svg" alt=""  className="h-[230px]"/>
 
-            <div className="roadmap-content absolute">
+            <div className="roadmap-content absolute overflow-x-hidden sm:overflow-x-visible">
               <h1 className="text-white font-organetto font-semibold text-3xl">Q1</h1>
 
               <p className="text-white font-red-hat text-[12px] font-normal">Launching Axis Finance</p>
@@ -68,11 +68,11 @@ const Road = () => {
 
 
 
-        <div className="box_4 absolute left-[50.4em] top-[3em]">
+        <div className="box_4 absolute overflow-x-hidden sm:overflow-x-visible left-[50.4em] top-[3em]">
           <div className="relative">
             <img src="assets/images/roadmap-frame.svg" alt=""  className="h-[230px]"/>
 
-            <div className="roadmap-content absolute">
+            <div className="roadmap-content absolute overflow-x-hidden sm:overflow-x-visible">
               <h1 className="text-white font-organetto font-semibold text-3xl">Q3</h1>
 
               <p className="text-white font-red-hat text-[12px] font-normal">Launching Axis Finance</p>
@@ -88,11 +88,11 @@ const Road = () => {
 
 
 
-        <div className="box_5 absolute left-[37.3em] top-[24.5em]">
+        <div className="box_5 absolute overflow-x-hidden sm:overflow-x-visible left-[37.3em] top-[24.5em]">
           <div className="relative">
             <img src="assets/images/roadmap-frame.svg" alt=""  className="h-[230px]"/>
 
-            <div className="roadmap-content absolute">
+            <div className="roadmap-content absolute overflow-x-hidden sm:overflow-x-visible">
               <h1 className="text-white font-organetto font-semibold text-3xl">Q2</h1>
 
               <p className="text-white font-red-hat text-[12px] font-normal">Launching Axis Finance</p>
@@ -113,11 +113,11 @@ const Road = () => {
 
 
       </div>
-      <div className="box_6 absolute left-[75.3em] top-[225.5em]">
+      <div className="box_6 absolute overflow-x-hidden  h-[230px]  left-[75.3em] top-[225.5em]">
           <div className="relative">
             <img src="assets/images/roadmap-frame.svg" alt=""  className="h-[230px]"/>
 
-            <div className="roadmap-content absolute text-center">
+            <div className="roadmap-content absolute overflow-x-hidden sm:overflow-x-visible text-center">
               <h1 className="text-white font-organett font-semibold text-3xl ">Q4</h1>
 
               <p className="text-white font-red-hat text-[12px] font-normal">Launching Axis Finance</p>
