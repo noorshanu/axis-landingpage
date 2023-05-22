@@ -2,7 +2,7 @@ import React from "react";
 
 const Road = () => {
   return (
-    <>
+    <div className="relative">
       <h1 className=" mt-32 mb-12 font-monument text-[#6BFF83] text-2xl font-bold sm:text-3xl text-center mx-auto">
         Roadmap
       </h1>
@@ -137,7 +137,12 @@ const Road = () => {
           className="ml-[-46px]"
         />
       </div>
-    </>
+      <img
+            src="assets/images/whiteLine.svg"
+            alt=""
+            className="right-[-14rem] top-[-14rem]  h-[500px] absolute hidden sm:block"
+          />
+    </div>
   );
 };
 

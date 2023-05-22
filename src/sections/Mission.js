@@ -88,11 +88,11 @@ const Mission = () => {
         </Swiper>
       </div>
 
-      <div className="  mt-16 sm:mt-20 ">
+      <div className="  mt-16 sm:mt-20  relative">
         <div className="mx-auto sub-info relative" ref={ref}>
           <img
             src="assets/images/whiteLine.svg"
-            className="left-0 absolute hidden sm:block"
+            className="left-[-10px] top-[-21em] absolute hidden sm:block"
             alt=""
           />
 
@@ -146,12 +146,18 @@ const Mission = () => {
               Beta testers
             </p>
           </div>
+        
           <img
             src="assets/images/whiteLine.svg"
             alt=""
-            className="right-0 absolute hidden sm:block"
+            className="right-0 top-[-21em] absolute hidden sm:block"
           />
         </div>
+        <img
+            src="assets/icons/moon-1.png"
+            alt=""
+            className="left-[-9em] absolute  sm:block"
+          />
       </div>
     </>
   );

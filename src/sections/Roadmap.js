@@ -22,7 +22,7 @@ let cards = [
 ];
 const Roadmap = () => {
   return (
-    <div className="my-20 ">
+    <div className="my-20  relative">
       {/* <div className="flex   rounded-[60px]  bg-black  place-items-center"> */}
       <Marquee>
         <div className="flex relative">
@@ -109,6 +109,7 @@ const Roadmap = () => {
           />
         </div>
       </Marquee>
+      <img src="assets/icons/blur.png" className="blur absolute left-[29%] top-0" alt=""/>
 
       {/* </div> */}
     </div>
