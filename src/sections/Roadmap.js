@@ -27,8 +27,8 @@ const Roadmap = () => {
       <Marquee>
         <div className="flex relative">
           <RoadmapCard data={{ ...cards[0], img: "/assets/icons/frame.svg" }} />
-          <div className=" text-center absolute top-[12px] left-28 ">
-            <video autoPlay loop muted id="about_video2" width={200}>
+          <div className=" text-center absolute top-[12px] left-32 sm:left-28 ">
+            <video autoPlay loop muted id="about_video2"  className="w-[150px] sm:w-[200px]">
               <source src="assets/fox/im2.webm" />
             </video>
           </div>
@@ -41,8 +41,8 @@ const Roadmap = () => {
 
         <div className="flex relative">
           <RoadmapCard data={{ ...cards[1], img: "/assets/icons/frame.svg" }} />
-          <div className=" text-center absolute top-[12px] left-28 ">
-            <video autoPlay loop muted id="about_video2" width={200}>
+          <div className=" text-center absolute top-[12px] left-32 sm:left-28">
+            <video autoPlay loop muted id="about_video2"  className="w-[150px] sm:w-[200px]">
               <source src="assets/fox/im5.webm" />
             </video>
           </div>
@@ -55,8 +55,8 @@ const Roadmap = () => {
 
         <div className="flex relative">
           <RoadmapCard data={{ ...cards[2], img: "/assets/icons/frame.svg" }} />
-          <div className=" text-center absolute top-[45px] left-32 ">
-            <video autoPlay loop muted id="about_video2" width={150}>
+          <div className=" text-center absolute top-[45px] left-32 sm:left-28">
+            <video autoPlay loop muted id="about_video2"  className="w-[150px] sm:w-[150px]">
               <source src="assets/fox/im4.webm" />
             </video>
           </div>
@@ -69,8 +69,8 @@ const Roadmap = () => {
 
         <div className="flex relative">
           <RoadmapCard data={{ ...cards[3], img: "/assets/icons/frame.svg" }} />
-          <div className=" text-center absolute top-[12px] left-28 ">
-            <video autoPlay loop muted id="about_video2" width={200}>
+          <div className=" text-center absolute top-[12px] left-32 sm:left-28 ">
+            <video autoPlay loop muted id="about_video2" className="w-[150px] sm:w-[200px]">
               <source src="assets/fox/im3.webm" />
             </video>
           </div>
@@ -83,8 +83,8 @@ const Roadmap = () => {
 
         <div className="flex relative">
           <RoadmapCard data={{ ...cards[0], img: "/assets/icons/frame.svg" }} />
-          <div className=" text-center absolute top-[12px] left-28 ">
-            <video autoPlay loop muted id="about_video2" width={200}>
+          <div className=" text-center absolute top-[12px] left-32 sm:left-28">
+            <video autoPlay loop muted id="about_video2" className="w-[150px] sm:w-[200px]">
               <source src="assets/fox/im7.webm" />
             </video>
           </div>
@@ -97,8 +97,8 @@ const Roadmap = () => {
 
         <div className="flex relative">
           <RoadmapCard data={{ ...cards[1], img: "/assets/icons/frame.svg" }} />
-          <div className=" text-center absolute top-[12px] left-28 ">
-            <video autoPlay loop muted id="about_video2" width={200}>
+          <div className=" text-center absolute top-[12px] left-32 sm:left-28 ">
+            <video autoPlay loop muted id="about_video2"  className="w-[150px] sm:w-[200px]">
               <source src="assets/fox/im6.webm" />
             </video>
           </div>

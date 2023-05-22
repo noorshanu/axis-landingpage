@@ -25,7 +25,7 @@ const Hero = () => {
     }, 2000);
   }, []);
   return (
-    <div className="Hero  mx-[1.5rem] pt-56 sm:pt-8 sm:py-8 sm:pb-14  sm:mt-[21rem] relative ">
+    <div className="Hero  mx-[1.5rem] pt-48 sm:pt-8 sm:py-8 sm:pb-14  sm:mt-[21rem] relative ">
       <h1 className="font-extrabold font-monument text-white text-[1.5rem] leading-[45px]  sm:text-[48px] sm:leading-[60px]">
         <AnimatedComponent
           parentClass={"w-[75%]"}
