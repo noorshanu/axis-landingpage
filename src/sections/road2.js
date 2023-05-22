@@ -146,6 +146,7 @@ const Road = () => {
         <img src="assets/icons/blur.png" className="top-[8em] left-[-10em] absolute  hidden sm:block" alt=""/>
         
         <img src="assets/icons/road-side.png" className="top-[33em] left-[-9.7em] absolute hidden sm:block" alt=""/>
+        
     </div>
   );
 };

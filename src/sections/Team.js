@@ -12,7 +12,7 @@ SwiperCore.use([Autoplay, Pagination, EffectCoverflow]);
 
 const Team = () => {
   return (
-    <div className="mb-24 mt-[24rem]">
+    <div className="mb-24 mt-[24rem] relative">
       <div className="mt-12 ">
         <div className=" col-span-2  py-2 ">
           <h1 className="capitalize text-4xl mb-3 text-[#6BFF83] font-monument text-center">
@@ -74,6 +74,8 @@ const Team = () => {
 
      
       </div>
+      <img src="assets/icons/road-side-1.png" className="top-[0em] right-[-9.7em] absolute hidden sm:block" alt=""/>
+      <img src="assets/icons/team-side.png" className="top-0 left-[-13.7em] absolute hidden sm:block" alt=""/>
     </div>
   );
 };
