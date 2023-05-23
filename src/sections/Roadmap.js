@@ -1,6 +1,7 @@
-import React from "react";
+import React,{ useRef } from "react";
 import RoadmapCard from "../components/RoadmapCard";
 import Marquee from "react-fast-marquee";
+import useIsInViewport from "../hooks/useIsInViewPort";
 let cards = [
   {
     title: "Dex",
@@ -21,11 +22,13 @@ let cards = [
   },
 ];
 const Roadmap = () => {
+  let ref = useRef();
+  let isOnViewPort = useIsInViewport(ref);
   return (
-    <div className="my-20  relative">
+    <div  ref={ref} className={`${isOnViewPort ?"my-20  relative slide-right-1":""}`}>
       {/* <div className="flex   rounded-[60px]  bg-black  place-items-center"> */}
-      <Marquee>
-        <div className="flex relative">
+      <Marquee className="slide-left-footer">
+        <div className={`${isOnViewPort ?" relative flex  slide-right-1":""}`}>
           <RoadmapCard data={{ ...cards[0], img: "/assets/icons/frame.svg" }} />
           <div className=" text-center absolute top-[12px] left-32 sm:left-28 ">
             <video autoPlay loop muted id="about_video2"  className="w-[150px] sm:w-[200px]">
@@ -39,7 +42,7 @@ const Roadmap = () => {
           />
         </div>
 
-        <div className="flex relative">
+        <div className={`${isOnViewPort ?" relative flex  slide-right-1":""}`}>
           <RoadmapCard data={{ ...cards[1], img: "/assets/icons/frame.svg" }} />
           <div className=" text-center absolute top-[12px] left-32 sm:left-28">
             <video autoPlay loop muted id="about_video2"  className="w-[150px] sm:w-[200px]">
@@ -53,7 +56,7 @@ const Roadmap = () => {
           />
         </div>
 
-        <div className="flex relative">
+        <div className={`${isOnViewPort ?" relative flex  slide-right-1":""}`}>
           <RoadmapCard data={{ ...cards[2], img: "/assets/icons/frame.svg" }} />
           <div className=" text-center absolute top-[45px] left-32 sm:left-28">
             <video autoPlay loop muted id="about_video2"  className="w-[150px] sm:w-[150px]">
@@ -67,7 +70,7 @@ const Roadmap = () => {
           />
         </div>
 
-        <div className="flex relative">
+        <div className={`${isOnViewPort ?" relative flex  slide-right-1":""}`}>
           <RoadmapCard data={{ ...cards[3], img: "/assets/icons/frame.svg" }} />
           <div className=" text-center absolute top-[12px] left-32 sm:left-28 ">
             <video autoPlay loop muted id="about_video2" className="w-[150px] sm:w-[200px]">
@@ -81,7 +84,7 @@ const Roadmap = () => {
           />
         </div>
 
-        <div className="flex relative">
+        <div className={`${isOnViewPort ?" relative flex  slide-right-1":""}`}>
           <RoadmapCard data={{ ...cards[0], img: "/assets/icons/frame.svg" }} />
           <div className=" text-center absolute top-[12px] left-32 sm:left-28">
             <video autoPlay loop muted id="about_video2" className="w-[150px] sm:w-[200px]">
@@ -95,7 +98,7 @@ const Roadmap = () => {
           />
         </div>
 
-        <div className="flex relative">
+        <div className= {`${isOnViewPort ?" relative flex  slide-right-2":""}`}>
           <RoadmapCard data={{ ...cards[1], img: "/assets/icons/frame.svg" }} />
           <div className=" text-center absolute top-[12px] left-32 sm:left-28 ">
             <video autoPlay loop muted id="about_video2"  className="w-[150px] sm:w-[200px]">
