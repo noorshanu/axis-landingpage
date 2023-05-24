@@ -1,4 +1,5 @@
 import React from "react";
+import RoadmapCard2 from "../components/RoadmapCard2";
 
 const Road = () => {
   return (
@@ -6,7 +7,82 @@ const Road = () => {
       <h1 className=" mt-32 mb-12 font-monument text-[#6BFF83] text-2xl font-bold sm:text-3xl text-center mx-auto">
         Roadmap
       </h1>
-      <div className="sm:flex relative text-center hidden ">
+      <div className="relative bg-[url('../public/assets/images/RoadmapFrame.svg')] bg-cover">
+        <img
+          src="/assets/images/RoadmapFrame.svg"
+          className="w-full h-auto invisible"
+        />
+        <div className="absolute inset-0 ">
+          <RoadmapCard2
+            top={"20%"}
+            left={"3%"}
+            maxw={"12%"}
+            h1={"Q3"}
+            p1={"Launching Axis Finance"}
+            p2={"Lining up first partnerships with Arbitrum protocols"}
+            p3={
+              "Reaching $2M-$5M TVL in a couple weeks after the platform launch"
+            }
+          />
+          <RoadmapCard2
+            top={"20%"}
+            left={"34%"}
+            maxw={"12%"}
+            h1={"Q1"}
+            p1={"Launching Axis Finance"}
+            p2={"Lining up first partnerships with Arbitrum protocols"}
+            p3={
+              "Reaching $2M-$5M TVL in a couple weeks after the platform launch"
+            }
+          />
+          <RoadmapCard2
+            top={"10%"}
+            left={"67%"}
+            maxw={"15%"}
+            h1={"Q3"} 
+            fontSize={"1vw"}
+            p1={"Launching Axis Finance"}
+            p2={"Lining up first partnerships with Arbitrum protocols"}
+            p3={
+              "Reaching $2M-$5M TVL in a couple weeks after the platform launch"
+            }
+          />
+          <RoadmapCard2
+            top={"61%"}
+            left={"17%"}
+            maxw={"12%"}
+            h1={"Q4"}
+            p1={"Launching Axis Finance"}
+            p2={"Lining up first partnerships with Arbitrum protocols"}
+            p3={
+              "Reaching $2M-$5M TVL in a couple weeks after the platform launch"
+            }
+          />
+          <RoadmapCard2
+            top={"61%"}
+            left={"53%"}
+            maxw={"12%"}
+            h1={"Q2"}
+            p1={"Launching Axis Finance"}
+            p2={"Lining up first partnerships with Arbitrum protocols"}
+            p3={
+              "Reaching $2M-$5M TVL in a couple weeks after the platform launch"
+            }
+          />
+          <RoadmapCard2
+            top={"61%"}
+            left={"86%"}
+            maxw={"12%"}
+            h1={"Q4"}
+            p1={"Launching Axis Finance"}
+            p2={"Lining up first partnerships with Arbitrum protocols"}
+            p3={
+              "Reaching $2M-$5M TVL in a couple weeks after the platform launch"
+            }
+          />
+        </div>
+      </div>
+      {/* <div className="sm:flex relative text-center hidden ">
         <img src="assets/images/roadmap-line.svg" alt="" />
 
         <div className="box_1 absolute overflow-x-hidden sm:overflow-x-visible left-[-64px] top-[126px]">
@@ -146,7 +222,7 @@ const Road = () => {
         <img src="assets/icons/blur.png" className="top-[8em] left-[-10em] absolute  hidden sm:block" alt=""/>
         
         <img src="assets/icons/road-side.png" className="top-[33em] left-[-9.7em] absolute hidden sm:block" alt=""/>
-        
+         */}
     </div>
   );
 };
