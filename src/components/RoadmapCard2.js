@@ -8,7 +8,7 @@ const RoadmapCard2 = ({
   p1,
   p2,
   p3,
-  fontSize = "0.8vw",
+  fontSize = "0.75vw",
 }) => {
   return (
     <div className={`absolute top-[${top}] left-[${left}]   max-w-[${maxw}]`}>

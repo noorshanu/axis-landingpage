@@ -7,7 +7,6 @@ const Road = () => {
       <h1 className=" mt-32 mb-12 font-monument text-[#6BFF83] text-2xl font-bold sm:text-3xl text-center mx-auto">
         Roadmap
       </h1>
-      <div className="hidden top-[20%] top-[10%] top-[61%] max-w-[12%] max-w-[15%] text-[1vw] text-[0.8vw] left-[3%] left-[34%] left-[17%] left-[67%] left-[53%] left-[86%]" />
 
       <div className="relative bg-[url('../public/assets/images/RoadmapFrame.svg')] bg-cover">
         <img
@@ -16,7 +15,7 @@ const Road = () => {
         />
         <div className="absolute inset-0 ">
           <RoadmapCard2
-            top={"20%"}
+            top={"22%"}
             left={"3%"}
             maxw={"12%"}
             h1={"Q3"}
@@ -27,8 +26,8 @@ const Road = () => {
             }
           />
           <RoadmapCard2
-            top={"20%"}
-            left={"34%"}
+            top={"22%"}
+            left={"33%"}
             maxw={"12%"}
             h1={"Q1"}
             p1={"Launching Axis Finance"}
@@ -39,10 +38,10 @@ const Road = () => {
           />
           <RoadmapCard2
             top={"10%"}
-            left={"67%"}
-            maxw={"15%"}
+            left={"64.5%"}
+            maxw={"14%"}
             h1={"Q3"}
-            fontSize={"1vw"}
+            fontSize={"0.95vw"}
             p1={"Launching Axis Finance"}
             p2={"Lining up first partnerships with Arbitrum protocols"}
             p3={
@@ -50,7 +49,7 @@ const Road = () => {
             }
           />
           <RoadmapCard2
-            top={"61%"}
+            top={"63%"}
             left={"17%"}
             maxw={"12%"}
             h1={"Q4"}
@@ -61,8 +60,8 @@ const Road = () => {
             }
           />
           <RoadmapCard2
-            top={"61%"}
-            left={"53%"}
+            top={"63%"}
+            left={"51%"}
             maxw={"12%"}
             h1={"Q2"}
             p1={"Launching Axis Finance"}
@@ -72,8 +71,8 @@ const Road = () => {
             }
           />
           <RoadmapCard2
-            top={"61%"}
-            left={"86%"}
+            top={"63%"}
+            left={"83%"}
             maxw={"12%"}
             h1={"Q4"}
             p1={"Launching Axis Finance"}
@@ -83,6 +82,8 @@ const Road = () => {
             }
           />
         </div>
+      <div className="hidden top-[22%] top-[10%] top-[63%] max-w-[12%] max-w-[14%] text-[0.95vw] text-[0.75vw] left-[3%] left-[33%] left-[17%] left-[64.5%] left-[51%] left-[83%]" />
+
       </div>
       {/* <div className="sm:flex relative text-center hidden ">
         <img src="assets/images/roadmap-line.svg" alt="" />
