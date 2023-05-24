@@ -18,14 +18,30 @@ const RoadmapCard2 = ({
       </h1>
       <div className="space-y-[8%]">
         <p
-          className={`text-white font-red-hat text-[${fontSize}]  font-normal`}
+          className={`text-white font-red-hat ${
+            fontSize != "0.75vw"
+              ? `xl:text-[12px] 2xl:text-[14px] text-[${fontSize}]`
+              : `text-[${fontSize}]`
+          }   font-normal`}
         >
           {p1}
         </p>
-        <p className={`text-white font-red-hat text-[${fontSize}] font-normal`}>
+        <p
+          className={`text-white font-red-hat ${
+            fontSize != "0.75vw"
+              ? `xl:text-[12px] 2xl:text-[14px] text-[${fontSize}]`
+              : `text-[${fontSize}]`
+          }  font-normal`}
+        >
           {p2}
         </p>
-        <p className={`text-white font-red-hat text-[${fontSize}] font-normal`}>
+        <p
+          className={`text-white font-red-hat ${
+            fontSize != "0.75vw"
+              ? `xl:text-[12px] 2xl:text-[15px] text-[${fontSize}]`
+              : `xl:text-[11px] 2xl:text-[12px] text-[${fontSize}]`
+          }  font-normal`}
+        >
           {p3}
         </p>
       </div>

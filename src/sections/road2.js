@@ -41,7 +41,7 @@ const Road = () => {
             left={"64.5%"}
             maxw={"14%"}
             h1={"Q3"}
-            fontSize={"0.95vw"}
+            fontSize={"1vw"}
             p1={"Launching Axis Finance"}
             p2={"Lining up first partnerships with Arbitrum protocols"}
             p3={
@@ -82,7 +82,7 @@ const Road = () => {
             }
           />
         </div>
-      <div className="hidden top-[21%] top-[9%] top-[62%] max-w-[12%] max-w-[14%] text-[0.95vw] text-[0.75vw] left-[3%] left-[33%] left-[17%] left-[64.5%] left-[51%] left-[83%]" />
+      <div className="hidden top-[21%] top-[9%] top-[62%] max-w-[12%] max-w-[14%] text-[1vw] text-[14px] text-[0.75vw] left-[3%] left-[33%] left-[17%] left-[64.5%] left-[51%] left-[83%]" />
 
       </div>
       {/* <div className="sm:flex relative text-center hidden ">
