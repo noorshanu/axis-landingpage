@@ -1,19 +1,40 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import RoadmapCard2 from "../components/RoadmapCard2";
+import { useEffect } from "react";
+import useIsInViewport from "../hooks/useIsInViewPort";
 
 const Road = () => {
+  let [showAnimation, setShowAnimation] = useState(false);
+  let ref = useRef();
+  let animation = useIsInViewport(ref);
+  useEffect(() => {
+    if (animation) setShowAnimation(true);
+    setTimeout(() => {
+      setShowAnimation(false);
+    }, 6150);
+  }, [animation]);
   return (
-    <div className="relative">
+    <div className="relative" ref={ref}>
       <h1 className=" mt-32 mb-12 font-monument text-[#6BFF83] text-2xl font-bold sm:text-3xl text-center mx-auto">
         Roadmap
       </h1>
-
-      <div className="relative bg-[url('../public/assets/images/RoadmapFrame.svg')] bg-cover">
+      <video
+        autoPlay
+        
+        muted
+        id="about_video2"
+        className={`w-full h-auto ${showAnimation ? "flex" : "hidden"}`}
+      >
+        <source src="assets/fox/frameAnm.mp4" />
+      </video>
+      <div
+        className={`relative bg-[url('../public/assets/images/RoadmapFrame.svg')]  bg-cover `}
+      >
         <img
           src="/assets/images/RoadmapFrame.svg"
-          className="w-full h-auto invisible"
+          className={`w-full h-auto invisible ${showAnimation ? "hidden" : "flex"}`}
         />
-        <div className="absolute inset-0 ">
+        <div className={`absolute inset-0 transition-opacity duration-500 ${ showAnimation ? "opacity-0" : "opacity-100"}`}>
           <RoadmapCard2
             top={"21%"}
             left={"3%"}
@@ -82,8 +103,7 @@ const Road = () => {
             }
           />
         </div>
-      <div className="hidden top-[21%] top-[9%] top-[62%] max-w-[12%] max-w-[14%] text-[1vw] text-[14px] text-[0.75vw] left-[3%] left-[33%] left-[17%] left-[64.5%] left-[51%] left-[83%]" />
-
+        <div className="hidden top-[21%] top-[9%] top-[62%] max-w-[12%] max-w-[14%] text-[1vw] text-[14px] text-[0.75vw] left-[3%] left-[33%] left-[17%] left-[64.5%] left-[51%] left-[83%]" />
       </div>
       {/* <div className="sm:flex relative text-center hidden ">
         <img src="assets/images/roadmap-line.svg" alt="" />
