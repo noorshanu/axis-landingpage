@@ -15,7 +15,7 @@ const Road = () => {
         />
         <div className="absolute inset-0 ">
           <RoadmapCard2
-            top={"22%"}
+            top={"21%"}
             left={"3%"}
             maxw={"12%"}
             h1={"Q3"}
@@ -26,7 +26,7 @@ const Road = () => {
             }
           />
           <RoadmapCard2
-            top={"22%"}
+            top={"21%"}
             left={"33%"}
             maxw={"12%"}
             h1={"Q1"}
@@ -37,7 +37,7 @@ const Road = () => {
             }
           />
           <RoadmapCard2
-            top={"10%"}
+            top={"9%"}
             left={"64.5%"}
             maxw={"14%"}
             h1={"Q3"}
@@ -49,7 +49,7 @@ const Road = () => {
             }
           />
           <RoadmapCard2
-            top={"63%"}
+            top={"62%"}
             left={"17%"}
             maxw={"12%"}
             h1={"Q4"}
@@ -60,7 +60,7 @@ const Road = () => {
             }
           />
           <RoadmapCard2
-            top={"63%"}
+            top={"62%"}
             left={"51%"}
             maxw={"12%"}
             h1={"Q2"}
@@ -71,7 +71,7 @@ const Road = () => {
             }
           />
           <RoadmapCard2
-            top={"63%"}
+            top={"62%"}
             left={"83%"}
             maxw={"12%"}
             h1={"Q4"}
@@ -82,7 +82,7 @@ const Road = () => {
             }
           />
         </div>
-      <div className="hidden top-[22%] top-[10%] top-[63%] max-w-[12%] max-w-[14%] text-[0.95vw] text-[0.75vw] left-[3%] left-[33%] left-[17%] left-[64.5%] left-[51%] left-[83%]" />
+      <div className="hidden top-[21%] top-[9%] top-[62%] max-w-[12%] max-w-[14%] text-[0.95vw] text-[0.75vw] left-[3%] left-[33%] left-[17%] left-[64.5%] left-[51%] left-[83%]" />
 
       </div>
       {/* <div className="sm:flex relative text-center hidden ">
@@ -222,7 +222,7 @@ const Road = () => {
             className="right-[-14rem] top-[-14rem]  h-[500px] absolute hidden sm:block"
           />
 
-        <img src="assets/icons/blur.png" className="top-[8em] left-[-10em] absolute  hidden sm:block" alt=""/>
+        <img src="assets/icons/blur.png" className="top-[8em] left-[-9em] absolute  hidden sm:block" alt=""/>
         
         <img src="assets/icons/road-side.png" className="top-[33em] left-[-9.7em] absolute hidden sm:block" alt=""/>
          */}
