@@ -65,7 +65,7 @@ const Mission = () => {
               slidesPerView: 4,
             },
           }}
-          style={{ height: "500px" }}
+          style={{ height: "700px" }}
         >
           <SwiperSlide>
             <img src="assets/images/main.png" alt="" />
