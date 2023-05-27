@@ -40,7 +40,7 @@ const Road = () => {
         />
         <div className={` inset-0 transition-opacity hidden sm:flex absolute duration-500 ${ showAnimation ? "opacity-0" : "opacity-100"}`}>
           <RoadmapCard2
-            top={"21%"}
+            top={"16%"}
             left={"3%"}
             maxw={"12%"}
             h1={"Q3"}
@@ -51,7 +51,7 @@ const Road = () => {
             }
           />
           <RoadmapCard2
-            top={"21%"}
+            top={"16%"}
             left={"33%"}
             maxw={"12%"}
             h1={"Q1"}
@@ -62,9 +62,9 @@ const Road = () => {
             }
           />
           <RoadmapCard2
-            top={"9%"}
-            left={"64.5%"}
-            maxw={"14%"}
+            top={"55%"}
+            left={"49.5%"}
+            maxw={"16%"}
             h1={"Q3"}
             fontSize={"1vw"}
             p1={"Launching Axis Finance"}
@@ -74,7 +74,7 @@ const Road = () => {
             }
           />
           <RoadmapCard2
-            top={"62%"}
+            top={"55%"}
             left={"17%"}
             maxw={"12%"}
             h1={"Q4"}
@@ -85,8 +85,8 @@ const Road = () => {
             }
           />
           <RoadmapCard2
-            top={"62%"}
-            left={"51%"}
+            top={"5%"}
+            left={"66%"}
             maxw={"12%"}
             h1={"Q2"}
             p1={"Launching Axis Finance"}
@@ -96,7 +96,7 @@ const Road = () => {
             }
           />
           <RoadmapCard2
-            top={"62%"}
+            top={"55%"}
             left={"83%"}
             maxw={"12%"}
             h1={"Q4"}
@@ -107,7 +107,7 @@ const Road = () => {
             }
           />
         </div>
-        <div className="hidden top-[21%] top-[9%] top-[62%] max-w-[12%] max-w-[14%] text-[1vw] text-[14px] text-[0.75vw] left-[3%] left-[33%] left-[17%] left-[64.5%] left-[51%] left-[83%]" />
+        <div className="hidden top-[16%] top-[55%] top-[55%] max-w-[12%] max-w-[16%] text-[1vw] text-[14px] text-[0.65vw] left-[3%] left-[33%] left-[17%] top-[5%] left-[49.5%] left-[66%] left-[83%]" />
       </div>
       {/* <div className="sm:flex relative text-center hidden ">
         <img src="assets/images/roadmap-line.svg" alt="" />

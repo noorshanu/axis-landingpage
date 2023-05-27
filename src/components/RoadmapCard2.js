@@ -8,7 +8,7 @@ const RoadmapCard2 = ({
   p1,
   p2,
   p3,
-  fontSize = "0.75vw",
+  fontSize = "0.65vw",
 }) => {
   return (
     <div className={`absolute top-[${top}] left-[${left}]   max-w-[${maxw}]`}>
@@ -19,27 +19,27 @@ const RoadmapCard2 = ({
       <div className="space-y-[8%]">
         <p
           className={`text-white font-red-hat ${
-            fontSize != "0.75vw"
+            fontSize != "0.65vw"
               ? `xl:text-[12px] 2xl:text-[14px] text-[${fontSize}]`
-              : `text-[${fontSize}]`
+              : `xl:text-[11px] 2xl:text-[10.6px] text-[${fontSize}]`
           }   font-normal`}
         >
           {p1}
         </p>
         <p
           className={`text-white font-red-hat ${
-            fontSize != "0.75vw"
+            fontSize != "0.65vw"
               ? `xl:text-[12px] 2xl:text-[14px] text-[${fontSize}]`
-              : `text-[${fontSize}]`
+              : `xl:text-[11px] 2xl:text-[10.6px] text-[${fontSize}]`
           }  font-normal`}
         >
           {p2}
         </p>
         <p
           className={`text-white font-red-hat ${
-            fontSize != "0.75vw"
+            fontSize != "0.65vw"
               ? `xl:text-[12px] 2xl:text-[15px] text-[${fontSize}]`
-              : `xl:text-[11px] 2xl:text-[12px] text-[${fontSize}]`
+              : `xl:text-[11px] 2xl:text-[10.6px] text-[${fontSize}]`
           }  font-normal`}
         >
           {p3}
