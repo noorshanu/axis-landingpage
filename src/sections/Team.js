@@ -22,7 +22,7 @@ const Team = () => {
       </div>
 
       <div className="m-auto text-center">
-        <div className="App  mt-16 mb-6 sm:mt-20 ">
+        <div className="App  mt-16 mb-6 sm:mt-20  mx-auto ">
           <Swiper
             loop={true}
             speed={1700}

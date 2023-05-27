@@ -31,7 +31,7 @@ const Road = () => {
         className={`relative bg-[url('../public/assets/images/RoadmapFrame.svg')]  bg-cover `}
       >
         <img
-          src="/assets/images/RoadmapFrame.svg"
+          src="/assets/images/RoadmapFrame.svg" alt=""
           className={`w-full h-auto invisible ${showAnimation ? "hidden" : "flex"}`}
         />
         <div className={`absolute inset-0 transition-opacity duration-500 ${ showAnimation ? "opacity-0" : "opacity-100"}`}>
