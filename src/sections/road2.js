@@ -23,18 +23,22 @@ const Road = () => {
         
         muted
         id="about_video2"
-        className={`w-full h-auto ${showAnimation ? "flex" : "hidden"}`}
+        className={`w-full h-auto ${showAnimation ? "hidden sm:flex" : "hidden"}`}
       >
         <source src="assets/fox/frameAnm.mp4" />
       </video>
       <div
-        className={`relative bg-[url('../public/assets/images/RoadmapFrame.svg')]  bg-cover `}
+        className={`relative mx-10 sm:bg-[url('../public/assets/images/RoadmapFrame.svg')] bg-[url('../public/assets/images/roadmap-sm-bg.svg')]  bg-cover `}
       >
         <img
           src="/assets/images/RoadmapFrame.svg"
-          className={`w-full h-auto invisible ${showAnimation ? "hidden" : "flex"}`}
+          className={`w-full h-auto invisible ${showAnimation ? "hidden" : "sm:flex hidden"}`}
         />
-        <div className={`absolute inset-0 transition-opacity duration-500 ${ showAnimation ? "opacity-0" : "opacity-100"}`}>
+        <img
+          src="/assets/images/roadmap-sm-bg.svg"
+          className={`w-full h-auto px-5 flex sm:hidden invisible`}
+        />
+        <div className={` inset-0 transition-opacity hidden sm:flex absolute duration-500 ${ showAnimation ? "opacity-0" : "opacity-100"}`}>
           <RoadmapCard2
             top={"21%"}
             left={"3%"}
