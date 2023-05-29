@@ -52,9 +52,9 @@ function App() {
             </div>
           </div>
           <About />
-          <div className="  max-w-7xl  px-4 sm:px-2 m-auto ">
+          {/* <div className="  max-w-7xl  px-4 sm:px-2 m-auto "> */}
             <Mission />
-          </div>
+          {/* </div> */}
 
           <Newalater/>
           <Roadmap />
