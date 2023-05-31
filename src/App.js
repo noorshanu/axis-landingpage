@@ -20,7 +20,6 @@ import useIsInViewport from "./hooks/useIsInViewPort";
 import Newalater from "./Newalater";
 
 function App() {
-
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
@@ -53,10 +52,10 @@ function App() {
           </div>
           <About />
           {/* <div className="  max-w-7xl  px-4 sm:px-2 m-auto "> */}
-            <Mission />
+          <Mission />
           {/* </div> */}
 
-          <Newalater/>
+          <Newalater />
           <Roadmap />
           <div className=" mt-12 py-3 px-3 w-full">
             <img

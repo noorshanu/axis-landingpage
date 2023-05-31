@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination, EffectCoverflow, Autoplay } from "swiper";
-
+import CountUp from "react-countup";
 // Import Swiper styles
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
@@ -9,6 +9,7 @@ import "swiper/components/pagination/pagination.scss";
 import { useRef } from "react";
 import { useEffect } from "react";
 import useIsInViewPort from "../hooks/useIsInViewPort";
+import ReactVisibilitySensor from "react-visibility-sensor";
 
 SwiperCore.use([Autoplay, Pagination, EffectCoverflow]);
 
@@ -52,8 +53,8 @@ const Mission = () => {
           slidesPerView={4}
           centeredSlides={true}
           breakpoints={{
-            340: {
-              slidesPerView: 3,
+            420: {
+              slidesPerView: 1,
             },
             768: {
               slidesPerView: 3,
@@ -102,7 +103,14 @@ const Mission = () => {
                 showAnimation ? "text-flicker-in-glow" : "text-[#6BFF83]"
               } font-monument font[400] text-3xl`}
             >
-              2650
+               <ReactVisibilitySensor partialVisibility offset={{ bottom: 200 }}>
+        {({ isVisible }) => (
+          <div style={{ height: 100 }}>
+            {isVisible ? <CountUp end={2650} /> : null}
+          </div>
+        )}
+      </ReactVisibilitySensor>
+              
             </h1>
             <p
               className={`${
@@ -119,7 +127,14 @@ const Mission = () => {
                 showAnimation ? "text-flicker-in-glow-2" : "text-[#6BFF83]"
               }   font-monument font[400] text-3xl`}
             >
-              2650
+               <ReactVisibilitySensor partialVisibility offset={{ bottom: 200 }}>
+        {({ isVisible }) => (
+          <div style={{ height: 100 }}>
+            {isVisible ? <CountUp end={2650} /> : null}
+          </div>
+        )}
+      </ReactVisibilitySensor>
+             
             </h1>
             <p
               className={` ${
@@ -136,7 +151,14 @@ const Mission = () => {
                 showAnimation ? "text-flicker-in-glow" : "text-[#6BFF83]"
               }  font-monument font[400] text-3xl`}
             >
-              2650
+               <ReactVisibilitySensor partialVisibility offset={{ bottom: 200 }}>
+        {({ isVisible }) => (
+          <div style={{ height: 100 }}>
+            {isVisible ? <CountUp end={2650} /> : null}
+          </div>
+        )}
+      </ReactVisibilitySensor>
+              
             </h1>
             <p
               className={`${
@@ -146,7 +168,7 @@ const Mission = () => {
               Beta testers
             </p>
           </div>
-        
+
           <img
             src="assets/images/whiteLine.svg"
             alt=""
@@ -154,10 +176,10 @@ const Mission = () => {
           />
         </div>
         <img
-            src="assets/icons/moon-1.png"
-            alt=""
-            className="left-[-9em] absolute  sm:block"
-          />
+          src="assets/icons/moon-1.png"
+          alt=""
+          className="left-[-9em] absolute  sm:block"
+        />
       </div>
     </>
   );
