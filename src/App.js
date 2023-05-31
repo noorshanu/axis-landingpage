@@ -37,7 +37,7 @@ function App() {
       ) : (
         <div className="bg-[#000] h-max w-screen overflow-x-hidden">
           <div
-            className="main-bg relative sm:bg-[url('/public/assets/images/main-bg.svg')] w-full h-[656px] sm:max-h-[800px]  sm:h-[100vh] bg-[length:100vw_100vh] bg-no-repeat "
+            className="main-bg relative sm:bg-[url('/public/assets/images/main-bg.svg')] w-full h-full sm:max-h-[800px]  sm:h-[100vh] bg-[length:100vw_100vh] bg-no-repeat "
             data-aos="fade-down"
             data-aos-easing="linear"
             data-aos-duration="1000"
