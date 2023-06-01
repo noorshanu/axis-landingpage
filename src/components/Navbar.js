@@ -54,7 +54,7 @@ export default function Navbar() {
           </Popover.Group>
           <a
             href="/"
-            className="mr-8 hidden  space-x-2 whitespace-nowrap rounded-lg py-2 font-bold md:flex justify-center items-center w-24 text-sm text-black  bg-gradient-to-b from-[#ACFFB9] to-[#11FF37] hover:bg-black hover:text-white sm:flex md:mr-0 absolute right-0"
+            className="mr-8 hidden  space-x-2 whitespace-nowrap rounded-lg py-2 font-bold md:flex justify-center items-center w-24 text-sm text-black  bg-gradient-to-b from-[#ACFFB9] to-[#11FF37] hover:from-[black] hover:to-[#000000a1] transition-all duration-500 hover:text-white sm:flex md:mr-0 absolute right-0"
           >
             BETA APP
           </a>
@@ -85,7 +85,7 @@ export default function Navbar() {
             <div className="bg-black px-5 py-3">
               <div className="flex items-center justify-between">
                 <div className="focus:border:0 flex items-center justify-center space-x-1 focus:outline-0 focus:ring-0">
-                  <img src="/assets/images/logo.png" alt="" />
+                  <img src="/assets/images/logo.svg" alt="" />
                 </div>
                 <div className="-mr-2">
                   <Popover.Button className=" inline-flex items-center justify-center rounded-md  p-2">

@@ -28,7 +28,7 @@ const Road = () => {
         <source src="assets/fox/frameAnm.mp4" />
       </video>
       <div
-        className={`relative mx-10 sm:bg-[url('../public/assets/images/RoadmapFrame.svg')] bg-[url('../public/assets/images/roadmap-sm-bg.svg')]  bg-cover `}
+        className={`relative mx-10 sm:bg-[url('../public/assets/images/RoadmapFrame.svg')] bg-[url('../public/assets/images/roadmap-sm-bg.svg')] bg-center bg-no-repeat  bg-contain  sm:bg-cover `}
       >
         <img
           src="/assets/images/RoadmapFrame.svg"
