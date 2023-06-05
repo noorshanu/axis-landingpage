@@ -41,16 +41,18 @@ const Mission = () => {
             disableOnInteraction: true,
             // reverseDirection:true,
           }}
-          initialSlide={3}
+          initialSlide={5}
+          className="h-[800px]"
           effect="coverflow"
           coverflowEffect={{
-            rotate: 50,
+            rotate: 45,
             stretch: 0,
-            depth: 100,
+            depth: -80,
+
             modifier: 1,
             slideShadows: false,
           }}
-          slidesPerView={4}
+          slidesPerView={5}
           centeredSlides={true}
           breakpoints={{
             420: {
@@ -60,30 +62,30 @@ const Mission = () => {
               slidesPerView: 3,
             },
             1024: {
-              slidesPerView: 4,
+              slidesPerView: 5,
             },
             1560: {
-              slidesPerView: 4,
+              slidesPerView: 5,
             },
           }}
-          style={{ height: "700px" }}
+          style={{ height: "60vh" }}
         >
-          <SwiperSlide>
+          <SwiperSlide className="flex items-center h-full">
             <img src="assets/images/main.png" alt="" />
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="flex items-center h-full">
             <img src="assets/images/main.png" alt="" />
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="flex items-center h-full">
             <img src="assets/images/main.png" alt="" />
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="flex items-center h-full">
             <img src="assets/images/main.png" alt="" />
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="flex items-center h-full">
             <img src="assets/images/main.png" alt="" />
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="flex items-center h-full">
             <img src="assets/images/main.png" alt="" />
           </SwiperSlide>
         </Swiper>
@@ -103,14 +105,13 @@ const Mission = () => {
                 showAnimation ? "text-flicker-in-glow" : "text-[#6BFF83]"
               } font-monument font[400] text-3xl`}
             >
-               <ReactVisibilitySensor partialVisibility offset={{ bottom: 200 }}>
-        {({ isVisible }) => (
-          <div style={{ height: 100 }}>
-            {isVisible ? <CountUp end={2650} /> : null}
-          </div>
-        )}
-      </ReactVisibilitySensor>
-              
+              <ReactVisibilitySensor partialVisibility offset={{ bottom: 200 }}>
+                {({ isVisible }) => (
+                  <div style={{ height: 100 }}>
+                    {isVisible ? <CountUp end={2650} /> : null}
+                  </div>
+                )}
+              </ReactVisibilitySensor>
             </h1>
             <p
               className={`${
@@ -127,14 +128,13 @@ const Mission = () => {
                 showAnimation ? "text-flicker-in-glow-2" : "text-[#6BFF83]"
               }   font-monument font[400] text-3xl`}
             >
-               <ReactVisibilitySensor partialVisibility offset={{ bottom: 200 }}>
-        {({ isVisible }) => (
-          <div style={{ height: 100 }}>
-            {isVisible ? <CountUp end={2650} /> : null}
-          </div>
-        )}
-      </ReactVisibilitySensor>
-             
+              <ReactVisibilitySensor partialVisibility offset={{ bottom: 200 }}>
+                {({ isVisible }) => (
+                  <div style={{ height: 100 }}>
+                    {isVisible ? <CountUp end={2650} /> : null}
+                  </div>
+                )}
+              </ReactVisibilitySensor>
             </h1>
             <p
               className={` ${
@@ -151,14 +151,13 @@ const Mission = () => {
                 showAnimation ? "text-flicker-in-glow" : "text-[#6BFF83]"
               }  font-monument font[400] text-3xl`}
             >
-               <ReactVisibilitySensor partialVisibility offset={{ bottom: 200 }}>
-        {({ isVisible }) => (
-          <div style={{ height: 100 }}>
-            {isVisible ? <CountUp end={2650} /> : null}
-          </div>
-        )}
-      </ReactVisibilitySensor>
-              
+              <ReactVisibilitySensor partialVisibility offset={{ bottom: 200 }}>
+                {({ isVisible }) => (
+                  <div style={{ height: 100 }}>
+                    {isVisible ? <CountUp end={2650} /> : null}
+                  </div>
+                )}
+              </ReactVisibilitySensor>
             </h1>
             <p
               className={`${

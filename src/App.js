@@ -1,15 +1,9 @@
-// import Services from "./sections/Services";
 import Team from "./sections/Team";
 import Navbar from "./components/Navbar";
 import About from "./sections/About";
-// import AxisNFTs from "./sections/AxisNFTs";
 import Hero from "./sections/Hero";
-// import Market from "./sections/Market";
 import Mission from "./sections/Mission";
-// import MobileApp from "./sections/MobileApp";
-// import Path from "./sections/Path";
 import Roadmap from "./sections/Roadmap";
-
 import Footer from "./sections/Footer";
 import Road from "./sections/road2";
 import AOS from "aos";
