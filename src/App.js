@@ -37,7 +37,7 @@ function App() {
           >
             <div className="overlays"></div>
             <video autoPlay loop muted id="about_video">
-              <source src="assets/hero.mp4" />
+              <source src="assets/hero.webm" />
             </video>
             <div className="mx-auto  max-w-7xl px-4 sm:px-12 absolute top-3 left-0 right-0  ">
               <Navbar />
