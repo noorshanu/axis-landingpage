@@ -42,7 +42,7 @@ const Mission = () => {
             // reverseDirection:true,
           }}
           initialSlide={5}
-          className="h-[800px]"
+          className="h-[830px]"
           effect="coverflow"
           coverflowEffect={{
             rotate: 45,
@@ -68,7 +68,7 @@ const Mission = () => {
               slidesPerView: 5,
             },
           }}
-          style={{ height: "60vh" }}
+          
         >
           <SwiperSlide className="flex items-center h-full">
             <img src="assets/images/main.png" alt="" />
