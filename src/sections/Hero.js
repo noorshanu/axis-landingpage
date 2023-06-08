@@ -25,7 +25,7 @@ const Hero = () => {
     }, 2000);
   }, []);
   return (
-    <div className="Hero  mx-[1.5rem] pt-48 sm:pt-8 sm:py-8 sm:pb-14  sm:mt-[21rem] relative ">
+    <div className="Hero  mx-[1.5rem] pt-48 sm:pt-8 sm:py-8 sm:pb-14  sm:mt-[27rem] relative ">
       <h1 className="font-extrabold font-monument text-white text-[1.5rem] leading-[45px]  sm:text-[48px] sm:leading-[60px]">
         <AnimatedComponent
           parentClass={"w-[75%]"}
@@ -53,8 +53,8 @@ const Hero = () => {
         parentClass={" w-[69%] pt-[0px] overflow-hidden"}
         className="space-y-4 md:space-y-12 animate-left"
       ></AnimatedComponent>
-      <div className="hero-social-box relative sm:absolute  sm:right-[-95px] animate-top-bottom">
-        <a href="/" className={`${classNames.firstChild} anim`}>
+      <div className="hero-social-box relative sm:absolute  sm:right-[-142px] animate-top-bottom">
+        <a href="/" className={`${classNames.firstChild} anim social-s`}>
           <FaTelegramPlane />
         </a>
         <a href="/" className={`${classNames.secondChild}`}>

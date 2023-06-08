@@ -64,11 +64,13 @@ body{
 }
 
 .hero-social-box {
-  top: -40px;
+  top: -103px;
   display: flex;
   flex-direction: column;
 }
-
+.social-s{
+  box-shadow: 0px 0px 6px  rgba(255,255,255,0.68);
+}
 .hero-social-box a {
   color: #fff;
   background: linear-gradient(320.66deg, #2f353a 14.75%, #1c1f22 84.81%);

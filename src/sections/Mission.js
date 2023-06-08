@@ -32,7 +32,7 @@ const Mission = () => {
 
   return (
     <>
-      <div className="App  mt-16 mb-6 sm:mt-20 ">
+      <div className="App  pt-16 mb-6 sm:mt-20  w-4/5 m-auto">
         <Swiper
           loop={true}
           speed={1400}
@@ -41,7 +41,7 @@ const Mission = () => {
             disableOnInteraction: true,
             // reverseDirection:true,
           }}
-          initialSlide={5}
+          initialSlide={6}
           className="h-[830px]"
           effect="coverflow"
           coverflowEffect={{
@@ -52,7 +52,7 @@ const Mission = () => {
             modifier: 1,
             slideShadows: false,
           }}
-          slidesPerView={5}
+          slidesPerView={6}
           centeredSlides={true}
           breakpoints={{
             420: {
@@ -91,7 +91,7 @@ const Mission = () => {
         </Swiper>
       </div>
 
-      <div className="  mt-16 sm:mt-20  relative">
+      <div className="  mt-16 sm:mt-20  relative mb-9">
         <div className="mx-auto sub-info relative" ref={ref}>
           <img
             src="assets/images/whiteLine.svg"
@@ -99,16 +99,16 @@ const Mission = () => {
             alt=""
           />
 
-          <div className="border-right">
+          <div className=" relative">
             <h1
               className={`${
                 showAnimation ? "text-flicker-in-glow" : "text-[#6BFF83]"
               } font-monument font[400] text-3xl`}
             >
-              <ReactVisibilitySensor partialVisibility offset={{ bottom: 200 }}>
+         <ReactVisibilitySensor partialVisibility offset={{ bottom: 200 }}>
                 {({ isVisible }) => (
-                  <div style={{ height: 100 }}>
-                    {isVisible ? <CountUp end={2650} /> : null}
+                  <div > <span className="text-black">a</span>
+                    {isVisible ? <CountUp end={20223} /> : null} 
                   </div>
                 )}
               </ReactVisibilitySensor>
@@ -120,9 +120,10 @@ const Mission = () => {
             >
               Beta testers
             </p>
+            <img src="assets/line.png" alt=""  className="a absolute right-0 top-[-38px]"/>
           </div>
 
-          <div className="border-right">
+          <div className="a relative">
             <h1
               className={`${
                 showAnimation ? "text-flicker-in-glow-2" : "text-[#6BFF83]"
@@ -130,8 +131,8 @@ const Mission = () => {
             >
               <ReactVisibilitySensor partialVisibility offset={{ bottom: 200 }}>
                 {({ isVisible }) => (
-                  <div style={{ height: 100 }}>
-                    {isVisible ? <CountUp end={2650} /> : null}
+                  <div >
+                    {isVisible ? <CountUp end={20} /> : null} GWEI
                   </div>
                 )}
               </ReactVisibilitySensor>
@@ -141,8 +142,9 @@ const Mission = () => {
                 showAnimation ? " text-flicker-in-glow-p-2 " : "text-[#fff]"
               } font-red-hat font-[500] text-xl mt-6`}
             >
-              Beta testers
+          Per transaction
             </p>
+            <img src="assets/line2.png" alt=""  className="a absolute right-0 top-[-38px]"/>
           </div>
 
           <div>
@@ -153,8 +155,8 @@ const Mission = () => {
             >
               <ReactVisibilitySensor partialVisibility offset={{ bottom: 200 }}>
                 {({ isVisible }) => (
-                  <div style={{ height: 100 }}>
-                    {isVisible ? <CountUp end={2650} /> : null}
+                  <div>
+                   ${isVisible ? <CountUp end={70} /> : null}M
                   </div>
                 )}
               </ReactVisibilitySensor>
@@ -164,7 +166,7 @@ const Mission = () => {
                 showAnimation ? " text-flicker-in-glow-p " : "text-[#fff]"
               }  font-red-hat font-[500] text-xl mt-6`}
             >
-              Beta testers
+              TVL per Quarter*
             </p>
           </div>
 
