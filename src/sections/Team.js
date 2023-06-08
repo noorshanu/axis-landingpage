@@ -12,7 +12,7 @@ SwiperCore.use([Autoplay, Pagination, EffectCoverflow]);
 
 const Team = () => {
   return (
-    <div className="mb-24 mt-[17rem] relative">
+    <div className="mb-24 mt-[15rem] relative">
       <div className="mt-12 ">
         <div className=" col-span-2  py-2 ">
           <h1 className="capitalize text-4xl mb-3 text-[#6BFF83] font-monument text-center">
