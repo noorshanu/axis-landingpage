@@ -25,7 +25,7 @@ const Hero = () => {
     }, 2000);
   }, []);
   return (
-    <div className="Hero  mx-[1.5rem] pt-48 sm:pt-8 sm:py-8 sm:pb-14  sm:mt-[27rem] relative ">
+    <div className="Hero  mx-[1.5rem] pt-48 sm:pt-8 sm:py-8 sm:pb-14 sm:mt-[15rem] md:mt-[27rem]  ">
       <h1 className="font-extrabold font-monument text-white text-[1.5rem] leading-[45px]  sm:text-[48px] sm:leading-[60px]">
         <AnimatedComponent
           parentClass={"w-[75%]"}
@@ -49,11 +49,8 @@ const Hero = () => {
         Axis Finance is the first{" "}
         <span className="text-[#6BFF83] mx-1">all-in-one</span> DeFi Protocol.
       </p>
-      <AnimatedComponent
-        parentClass={" w-[73%] pt-[0px] overflow-hidden"}
-        className="space-y-4 md:space-y-12 animate-left"
-      ></AnimatedComponent>
-      <div className="hero-social-box relative sm:absolute  sm:right-[-132px] w-[58px] pb-3 px-2 animate-top-bottom overflow-x-visible sm:overflow-x-hidden">
+     
+      <div className="hero-social-box relative md:absolute md:top-[400px]   md:right-[20px] w-[58px] pb-3 px-2 animate-top-bottom overflow-x-visible md:overflow-x-hidden">
         <a
           href="/"
           className={` bg-black ${classNames.firstChild} anim social-s mx-1 sm:mx-0 `}
