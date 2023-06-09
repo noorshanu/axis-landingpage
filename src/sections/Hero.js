@@ -53,21 +53,36 @@ const Hero = () => {
         parentClass={" w-[73%] pt-[0px] overflow-hidden"}
         className="space-y-4 md:space-y-12 animate-left"
       ></AnimatedComponent>
-      <div className="hero-social-box relative sm:absolute  sm:right-[-132px] w-[58px] pb-3 px-2 animate-top-bottom">
-        <a href="/" className={` bg-black ${classNames.firstChild} anim social-s `}>
+      <div className="hero-social-box relative sm:absolute  sm:right-[-132px] w-[58px] pb-3 px-2 animate-top-bottom overflow-x-visible sm:overflow-x-hidden">
+        <a
+          href="/"
+          className={` bg-black ${classNames.firstChild} anim social-s mx-1 sm:mx-0 `}
+        >
           <FaTelegramPlane />
         </a>
-        <a href="/" className={` bg-black ${classNames.secondChild}  anim social-s `}>
+        <a
+          href="/"
+          className={` bg-black ${classNames.secondChild}  anim social-s mx-1 sm:mx-0 `}
+        >
           {" "}
           <BsTwitter />
         </a>
-        <a href="/" className={` bg-black ${classNames.thirdChild}  anim social-s ` }>
+        <a
+          href="/"
+          className={` bg-black ${classNames.thirdChild}  anim social-s mx-1 sm:mx-0 `}
+        >
           <BsDiscord />
         </a>
-        <a href="/" className={` bg-black ${classNames.fourthChild}  anim social-s `}>
+        <a
+          href="/"
+          className={` bg-black ${classNames.fourthChild}  anim social-s mx-1 sm:mx-0 `}
+        >
           <AiOutlineInstagram />
         </a>
-        <a href="/" className={` bg-black ${classNames.lastChild}  anim social-s `}>
+        <a
+          href="/"
+          className={` bg-black ${classNames.lastChild}  anim social-s mx-1 sm:mx-0 `}
+        >
           <AiFillYoutube />
         </a>
       </div>

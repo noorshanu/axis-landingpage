@@ -15,7 +15,7 @@ const Road = () => {
   }, [animation]);
   return (
     <div className="relative" ref={ref}>
-      <h1 className=" mt-32 mb-12  sm:text-3xl text-center mx-auto text-5xl  text-[#6BFF83] font-[800] font-monument">
+      <h1 className=" mt-12 sm:mt-32 mb-12  sm:text-3xl text-center mx-auto text-5xl  text-[#6BFF83] font-[800] font-monument">
         Roadmap
       </h1>
       <video
@@ -25,7 +25,7 @@ const Road = () => {
         id="about_video2"
         className={`w-full h-auto ${showAnimation ? "hidden sm:flex" : "hidden"}`}
       >
-        <source src="assets/fox/frameAnm.mp4" />
+        <source src="assets/roadmap-frame.webm" />
       </video>
       <div
         className={`relative mx-10 sm:bg-[url('../public/assets/images/RoadmapFrame.svg')] bg-[url('../public/assets/images/roadmap-sm-bg.svg')] bg-center bg-no-repeat  bg-contain  sm:bg-cover `}

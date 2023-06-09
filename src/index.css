@@ -163,13 +163,8 @@ body {
 }
 
 .wishlist {
-  background: linear-gradient(
-    233.14deg,
-    #11ff37 -41.32%,
-    #000000 -13.59%,
-    #11ff37 122.78%,
-    #000000 180.56%
-  );
+  background-image: url('/public/assets/images/newslater-sm.svg');
+ 
   border-radius: 40px;
 }
 .roadmap-content {
@@ -209,7 +204,7 @@ body {
 
   #about_video {
     object-fit: cover;
-    height: 80vh;
+    height: 700px;
   }
 
   #about_video2 {
@@ -371,7 +366,7 @@ body {
 
 .animate-top-bottom {
   -webkit-animation: top-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s both;
-  overflow-x: hidden;
+  
   animation: top-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s both;
 }
 @-webkit-keyframes top-right {
@@ -1012,5 +1007,17 @@ body {
   }
   to {
     margin-left: 0%;
+  }
+}
+@media (min-width: 640px) {
+  .wishlist{
+    background: linear-gradient(
+    233.14deg,
+    #11ff37 -41.32%,
+    #000000 -13.59%,
+    #11ff37 122.78%,
+    #000000 180.56%
+  );
+    
   }
 }

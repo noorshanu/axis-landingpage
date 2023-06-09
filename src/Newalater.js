@@ -7,8 +7,8 @@ const Newalater = () => {
    
     <div className="mx-auto py-12  max-w-7xl px-4 sm:px-12 relative">
     <img src="assets/moons.png" alt="" className="a absolute top-[-18px] left-[-129px]"/>
-      <img src="assets/shade.png" alt="" className="a absolute top-[95px] left-[61px]"/>
-      <div className=" font-monument wishlist px-5 flex items-start sm:items-center m-auto font-normal text-2xl text-start sm:text-center justify-start sm:justify-center gap-2 text-white  w-full h-[260px] sm:h-[180px] my-12 rounded-lg cursor-pointer bg-cover">
+      <img src="assets/shade.png" alt="" className="hidden sm:flex a absolute top-[95px] left-[61px]"/>
+      <div className=" font-monument wishlist bg-cover px-5 flex items-start sm:items-center m-auto font-normal text-2xl text-start sm:text-center justify-start sm:justify-center gap-2 text-white  w-full h-[260px] sm:h-[180px] my-12 rounded-lg cursor-pointer">
         <span className='z-50 max-w-xs sm:max-w-max' data-aos="fade-left" data-aos-duration="1000">
           Become a BETA tester now
         </span>{" "}

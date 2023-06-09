@@ -54,7 +54,6 @@ const Mission = () => {
           }}
           centeredSlides={true}
           breakpoints={{
-
             420: {
               slidesPerView: 1,
             },
@@ -68,7 +67,6 @@ const Mission = () => {
               slidesPerView: 6,
             },
           }}
-          
         >
           <SwiperSlide className="flex items-center h-full">
             <img src="assets/images/main.png" alt="" />
@@ -91,24 +89,28 @@ const Mission = () => {
         </Swiper>
       </div>
 
-      <div className="  mt-16 sm:mt-20  relative mb-9">
-        <div className="mx-auto sub-info grid sm:grid-cols-3 grid-cols-1 gap-y-3 relative" ref={ref}>
-          <img
-            src="assets/images/whiteLine.svg"
-            className="left-[-10px] top-[-21em] absolute hidden sm:block"
-            alt=""
-          />
-
+      <div className=" sm:mt-20  relative my-3">
+        <img
+          src="assets/images/whiteLine.svg"
+          className="left-[-10px] top-[-21em] absolute hidden sm:block"
+          alt=""
+        />
+        <div
+          className="mx-auto sub-info grid sm:grid-cols-3 grid-cols-1 gap-y-8 relative place-items-center"
+          ref={ref}
+        >
           <div className=" relative">
             <h1
               className={`${
                 showAnimation ? "text-flicker-in-glow" : "text-[#6BFF83]"
               } font-monument font[400] text-3xl`}
             >
-         <ReactVisibilitySensor partialVisibility offset={{ bottom: 200 }}>
+              <ReactVisibilitySensor partialVisibility offset={{ bottom: 200 }}>
                 {({ isVisible }) => (
-                  <div > <span className="text-black">a</span>
-                    {isVisible ? <CountUp end={20223} /> : null} 
+                  <div>
+                    {" "}
+                    <span className="text-black">a</span>
+                    {isVisible ? <CountUp end={20223} /> : null}
                   </div>
                 )}
               </ReactVisibilitySensor>
@@ -120,10 +122,18 @@ const Mission = () => {
             >
               Beta testers
             </p>
-            <img src="assets/line.png" alt=""  className="a absolute right-0 top-[-38px]"/>
+            <img
+              src="assets/line.png"
+              alt=""
+              className="hidden sm:flex a absolute right-[-30px] xl:right-[-15rem] top-[-38px]"
+            />
           </div>
-
-          <div className="a relative">
+          <img
+            src="assets/line.png"
+            className="  block sm:hidden rotate-90 h-full w-auto"
+            alt=""
+          />
+          <div className=" relative">
             <h1
               className={`${
                 showAnimation ? "text-flicker-in-glow-2" : "text-[#6BFF83]"
@@ -131,9 +141,7 @@ const Mission = () => {
             >
               <ReactVisibilitySensor partialVisibility offset={{ bottom: 200 }}>
                 {({ isVisible }) => (
-                  <div >
-                    {isVisible ? <CountUp end={20} /> : null} GWEI
-                  </div>
+                  <div>{isVisible ? <CountUp end={20} /> : null} GWEI</div>
                 )}
               </ReactVisibilitySensor>
             </h1>
@@ -142,12 +150,17 @@ const Mission = () => {
                 showAnimation ? " text-flicker-in-glow-p-2 " : "text-[#fff]"
               } font-red-hat font-[500] text-xl mt-6`}
             >
-          Per transaction
+              Per transaction
             </p>
-            <img src="assets/line2.png" alt=""  className="a absolute right-0 top-[-38px]"/>
+            
           </div>
 
-          <div>
+          <img
+            src="assets/line.png"
+            alt=""
+            className=" flex sm:hidden rotate-90 "
+          />
+          <div className="relative">
             <h1
               className={`${
                 showAnimation ? "text-flicker-in-glow" : "text-[#6BFF83]"
@@ -155,9 +168,7 @@ const Mission = () => {
             >
               <ReactVisibilitySensor partialVisibility offset={{ bottom: 200 }}>
                 {({ isVisible }) => (
-                  <div>
-                   ${isVisible ? <CountUp end={70} /> : null}M
-                  </div>
+                  <div>${isVisible ? <CountUp end={70} /> : null}M</div>
                 )}
               </ReactVisibilitySensor>
             </h1>
@@ -168,14 +179,16 @@ const Mission = () => {
             >
               TVL per Quarter*
             </p>
+            <img
+              src="assets/line2.png"
+              alt=""
+              className="hidden sm:flex  a absolute left-[-30px] xl:left-[-15rem] top-[-38px]"
+            />
           </div>
 
-          <img
-            src="assets/images/whiteLine.svg"
-            alt=""
-            className="right-0 top-[-21em] absolute hidden sm:block"
-          />
+          
         </div>
+
         <img
           src="assets/icons/moon-1.png"
           alt=""

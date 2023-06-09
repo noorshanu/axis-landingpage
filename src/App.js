@@ -8,9 +8,8 @@ import Footer from "./sections/Footer";
 import Road from "./sections/road2";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Loader from "./Loader";
-import useIsInViewport from "./hooks/useIsInViewPort";
 import Newalater from "./Newalater";
 
 function App() {
@@ -60,8 +59,14 @@ function App() {
           </div>
 
           <div className="relative">
-      <img src="/assets/images/roadEffect.svg" className="w-[50vw] z-50 h-auto absolute bottom-[-10rem] left-0" />
-      <img src="/assets/images/Roadmap-white-bg-effect.svg" className="w-[35vw] z-50 h-auto absolute top-[-20rem] right-0" />
+            <img
+              src="/assets/images/RoadEffect.svg"
+              className="w-[50vw] z-50 h-auto absolute bottom-[-10rem] left-0"
+            />
+            <img
+              src="/assets/images/Roadmap-white-bg-effect.svg"
+              className="w-[35vw] z-50 h-auto absolute top-[-20rem] right-0"
+            />
 
             <div className="mx-auto  max-w-7xl px-4 sm:px-12 ">
               {/* <Market/> */}

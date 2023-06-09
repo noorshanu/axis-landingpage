@@ -8,7 +8,7 @@ const About = () => {
 
   <div className=" text-center pt-48">
     <video autoPlay loop muted id="about_video2">
-      <source src="assets/icons/about.webm"/>
+      <source src="assets/about.webm"/>
     </video>
 
 
