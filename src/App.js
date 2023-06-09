@@ -59,11 +59,18 @@ function App() {
             />
           </div>
 
-          <div className="mx-auto  max-w-7xl px-4 sm:px-12 ">
-            {/* <Market/> */}
-            {/* <AxisNFTs/>
+          <div className="relative">
+      <img src="/assets/images/roadEffect.svg" className="w-[50vw] z-50 h-auto absolute bottom-[-10rem] left-0" />
+      <img src="/assets/images/Roadmap-white-bg-effect.svg" className="w-[35vw] z-50 h-auto absolute top-[-20rem] right-0" />
+
+            <div className="mx-auto  max-w-7xl px-4 sm:px-12 ">
+              {/* <Market/> */}
+              {/* <AxisNFTs/>
         <MobileApp/> */}
-            <Road />
+              <Road />
+            </div>
+          </div>
+          <div className="mx-auto  max-w-7xl px-4 sm:px-12 ">
             {/* <Path/> */}
             <Team />
           </div>

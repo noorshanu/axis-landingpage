@@ -50,24 +50,24 @@ const Hero = () => {
         <span className="text-[#6BFF83] mx-1">all-in-one</span> DeFi Protocol.
       </p>
       <AnimatedComponent
-        parentClass={" w-[69%] pt-[0px] overflow-hidden"}
+        parentClass={" w-[73%] pt-[0px] overflow-hidden"}
         className="space-y-4 md:space-y-12 animate-left"
       ></AnimatedComponent>
-      <div className="hero-social-box relative sm:absolute  sm:right-[-142px] animate-top-bottom">
-        <a href="/" className={`${classNames.firstChild} anim social-s`}>
+      <div className="hero-social-box relative sm:absolute  sm:right-[-132px] w-[58px] pb-3 px-2 animate-top-bottom">
+        <a href="/" className={` bg-black ${classNames.firstChild} anim social-s `}>
           <FaTelegramPlane />
         </a>
-        <a href="/" className={`${classNames.secondChild}`}>
+        <a href="/" className={` bg-black ${classNames.secondChild}  anim social-s `}>
           {" "}
           <BsTwitter />
         </a>
-        <a href="/" className={`${classNames.thirdChild}`}>
+        <a href="/" className={` bg-black ${classNames.thirdChild}  anim social-s ` }>
           <BsDiscord />
         </a>
-        <a href="/" className={`${classNames.fourthChild}`}>
+        <a href="/" className={` bg-black ${classNames.fourthChild}  anim social-s `}>
           <AiOutlineInstagram />
         </a>
-        <a href="/" className={`${classNames.lastChild}`}>
+        <a href="/" className={` bg-black ${classNames.lastChild}  anim social-s `}>
           <AiFillYoutube />
         </a>
       </div>
