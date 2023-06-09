@@ -103,8 +103,7 @@ body {
 }
 
 .sub-info {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
+
   text-align: center;
 }
 .border-right {
@@ -159,7 +158,7 @@ body {
 }
 .input-sub {
   background: rgba(0, 0, 0, 0.15) !important;
-  border-radius: 49px;
+ 
   border: 1px solid transparent;
 }
 
@@ -189,13 +188,12 @@ body {
 @media (max-width: 768px) {
   .wishlist {
     flex-direction: column;
-    text-align: center;
+    
     padding: 20px;
   }
   .input-sub {
     width: 100%;
     margin: auto;
-    text-align: center;
   }
   .try-btn {
     font-size: 14px !important;

@@ -52,9 +52,9 @@ const Mission = () => {
             modifier: 1,
             slideShadows: false,
           }}
-          slidesPerView={6}
           centeredSlides={true}
           breakpoints={{
+
             420: {
               slidesPerView: 1,
             },
@@ -65,7 +65,7 @@ const Mission = () => {
               slidesPerView: 5,
             },
             1560: {
-              slidesPerView: 5,
+              slidesPerView: 6,
             },
           }}
           
@@ -92,7 +92,7 @@ const Mission = () => {
       </div>
 
       <div className="  mt-16 sm:mt-20  relative mb-9">
-        <div className="mx-auto sub-info relative" ref={ref}>
+        <div className="mx-auto sub-info grid sm:grid-cols-3 grid-cols-1 gap-y-3 relative" ref={ref}>
           <img
             src="assets/images/whiteLine.svg"
             className="left-[-10px] top-[-21em] absolute hidden sm:block"

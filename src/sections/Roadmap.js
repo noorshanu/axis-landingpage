@@ -1,4 +1,4 @@
-import React,{ useRef } from "react";
+import React, { useRef } from "react";
 import RoadmapCard from "../components/RoadmapCard";
 import Marquee from "react-fast-marquee";
 import useIsInViewport from "../hooks/useIsInViewPort";
@@ -25,13 +25,24 @@ const Roadmap = () => {
   let ref = useRef();
   let isOnViewPort = useIsInViewport(ref);
   return (
-    <div  ref={ref} className={`${isOnViewPort ?"my-20  relative slide-right-1":""}`}>
+    <div
+      ref={ref}
+      className={`${isOnViewPort ? "my-20  relative slide-right-1" : ""}`}
+    >
       {/* <div className="flex   rounded-[60px]  bg-black  place-items-center"> */}
       <Marquee className="slide-left-footer">
-        <div className={`${isOnViewPort ?" relative flex  slide-right-1":""}`}>
+        <div
+          className={`${isOnViewPort ? " relative flex  slide-right-1" : ""}`}
+        >
           <RoadmapCard data={{ ...cards[0], img: "/assets/icons/frame.svg" }} />
-          <div className=" text-center absolute top-[12px] left-32 sm:left-28 ">
-            <video autoPlay loop muted id="about_video2"  className="w-[150px] sm:w-[200px]">
+          <div className=" text-center absolute top-[14px]  sm:left-0 sm:right-0 left-32  ">
+            <video
+              autoPlay
+              loop
+              muted
+              id="about_video2"
+              className="w-[150px] sm:w-[200px]"
+            >
               <source src="assets/fox/im2.webm" />
             </video>
           </div>
@@ -42,10 +53,18 @@ const Roadmap = () => {
           />
         </div>
 
-        <div className={`${isOnViewPort ?" relative flex  slide-right-1":""}`}>
+        <div
+          className={`${isOnViewPort ? " relative flex  slide-right-1" : ""}`}
+        >
           <RoadmapCard data={{ ...cards[1], img: "/assets/icons/frame.svg" }} />
-          <div className=" text-center absolute top-[12px] left-32 sm:left-28">
-            <video autoPlay loop muted id="about_video2"  className="w-[150px] sm:w-[200px]">
+          <div className=" text-center   w-full flex justify-center  absolute items-center top-[16px] sm:top-[45px] left-0 right-0 ">
+            <video
+              autoPlay
+              loop
+              muted
+              id="about_video2"
+              className="relative w-[150px] sm:w-[200px]"
+            >
               <source src="assets/fox/im5.webm" />
             </video>
           </div>
@@ -56,10 +75,18 @@ const Roadmap = () => {
           />
         </div>
 
-        <div className={`${isOnViewPort ?" relative flex  slide-right-1":""}`}>
+        <div
+          className={`${isOnViewPort ? " relative flex  slide-right-1" : ""}`}
+        >
           <RoadmapCard data={{ ...cards[2], img: "/assets/icons/frame.svg" }} />
-          <div className=" text-center absolute top-[45px] left-32 sm:left-28">
-            <video autoPlay loop muted id="about_video2"  className="w-[150px] sm:w-[150px]">
+          <div className=" text-center   w-full flex justify-center  absolute items-center top-[28px] sm:top-[45px] left-0 right-0 ">
+            <video
+              autoPlay
+              loop
+              muted
+              id="about_video2"
+              className="w-[25%] sm:w-[150px]"
+            >
               <source src="assets/fox/im4.webm" />
             </video>
           </div>
@@ -70,10 +97,18 @@ const Roadmap = () => {
           />
         </div>
 
-        <div className={`${isOnViewPort ?" relative flex  slide-right-1":""}`}>
+        <div
+          className={`${isOnViewPort ? " relative flex  slide-right-1" : ""}`}
+        >
           <RoadmapCard data={{ ...cards[3], img: "/assets/icons/frame.svg" }} />
-          <div className=" text-center absolute top-[12px] left-32 sm:left-28 ">
-            <video autoPlay loop muted id="about_video2" className="w-[150px] sm:w-[200px]">
+          <div className=" text-center  w-full flex justify-center  absolute top-[15px]  left-0 right-0   ">
+            <video
+              autoPlay
+              loop
+              muted
+              id="about_video2"
+              className="w-[150px] sm:w-[200px]"
+            >
               <source src="assets/fox/im3.webm" />
             </video>
           </div>
@@ -84,10 +119,18 @@ const Roadmap = () => {
           />
         </div>
 
-        <div className={`${isOnViewPort ?" relative flex  slide-right-1":""}`}>
+        <div
+          className={`${isOnViewPort ? " relative flex  slide-right-1" : ""}`}
+        >
           <RoadmapCard data={{ ...cards[0], img: "/assets/icons/frame.svg" }} />
-          <div className=" text-center absolute top-[12px] left-32 sm:left-28">
-            <video autoPlay loop muted id="about_video2" className="w-[150px] sm:w-[200px]">
+          <div className=" text-center  w-full flex justify-center  absolute top-[12px]  left-0 right-0  ">
+            <video
+              autoPlay
+              loop
+              muted
+              id="about_video2"
+              className="w-[150px] sm:w-[200px]"
+            >
               <source src="assets/fox/im7.webm" />
             </video>
           </div>
@@ -98,10 +141,18 @@ const Roadmap = () => {
           />
         </div>
 
-        <div className= {`${isOnViewPort ?" relative flex  slide-right-2":""}`}>
+        <div
+          className={`${isOnViewPort ? " relative flex  slide-right-2" : ""}`}
+        >
           <RoadmapCard data={{ ...cards[1], img: "/assets/icons/frame.svg" }} />
-          <div className=" text-center absolute top-[12px] left-32 sm:left-28 ">
-            <video autoPlay loop muted id="about_video2"  className="w-[150px] sm:w-[200px]">
+          <div className=" text-center  w-full flex justify-center  absolute top-[12px] left-0 right-0   ">
+            <video
+              autoPlay
+              loop
+              muted
+              id="about_video2"
+              className="w-[150px] sm:w-[200px]"
+            >
               <source src="assets/fox/im6.webm" />
             </video>
           </div>
@@ -112,7 +163,11 @@ const Roadmap = () => {
           />
         </div>
       </Marquee>
-      <img src="assets/icons/blur.png" className="blur absolute left-[29%] top-0" alt=""/>
+      <img
+        src="assets/icons/blur.png"
+        className="blur absolute left-[29%] top-0"
+        alt=""
+      />
 
       {/* </div> */}
     </div>
