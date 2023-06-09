@@ -13,7 +13,7 @@ const RoadmapCard2 = ({
   return (
     <div className={`absolute top-[${top}] left-[${left}]   max-w-[${maxw}]`}>
       {/* <div className={`absolute top-[20%] left-[3%] max-w-[12%]`}> */}
-      <h1 className="text-white font-organetto font-semibold text-[2vw] mt-[10%] mb-[6%]">
+      <h1 className="text-white font-red-hat font-semibold text-[2vw] mt-[10%] mb-[6%]">
         {h1}
       </h1>
       <div className="space-y-[8%]">

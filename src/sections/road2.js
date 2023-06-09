@@ -25,7 +25,7 @@ const Road = () => {
         id="about_video2"
         className={`w-full h-auto ${showAnimation ? "hidden sm:flex" : "hidden"}`}
       >
-        <source src="assets/roadmap-frame.webm" />
+        <source src="assets/fox/frameAnm.mp4" />
       </video>
       <div
         className={`relative mx-10 sm:bg-[url('../public/assets/images/RoadmapFrame.svg')] bg-[url('../public/assets/images/roadmap-sm-bg.svg')] bg-center bg-no-repeat  bg-contain  sm:bg-cover `}
