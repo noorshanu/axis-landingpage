@@ -15,7 +15,7 @@ const Team = () => {
     <div className="mb-24 mt-[15rem] relative">
       <div className="mt-12 ">
         <div className=" col-span-2  py-2 ">
-          <h1 className="capitalize text-4xl mb-3 text-[#6BFF83] font-monument text-center">
+          <h1 className="capitalize text-5xl mb-3 text-[#6BFF83] font-[800] font-monument text-center">
             our team
           </h1>
         </div>
