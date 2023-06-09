@@ -35,7 +35,7 @@ function App() {
             data-aos-duration="1000"
           >
             <div className="overlays"></div>
-            <video autoPlay loop muted id="about_video">
+            <video autoPlay loop muted id="about_video" playsInline>
               <source src="assets/hero.mp4" data-wf-ignore="true"/>
               <source src="assets/hero.webm" data-wf-ignore="true" />
             </video>
