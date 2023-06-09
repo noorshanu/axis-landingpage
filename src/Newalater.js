@@ -21,7 +21,7 @@ const Newalater = () => {
           />{" "}
           <a
             href="/"
-            className="sm:py-5 py-3  bg-black whitespace-nowrap rounded-lg  mt-2 sm:mt-0 w-fit sm:w-full sm:rounded-[64px] font-red-hat h-fit px-10 font-[300] text-[12px] sm:text-[18px]"
+            className="sm:py-5 py-1  bg-black whitespace-nowrap rounded-lg  mt-2 sm:mt-0 w-fit sm:w-full sm:rounded-[64px] font-red-hat h-fit px-10 font-[300] text-[12px] sm:text-[18px]"
           >
             Try Now
           </a>

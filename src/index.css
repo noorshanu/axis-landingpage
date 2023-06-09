@@ -181,6 +181,9 @@ body {
   padding-right: 5px;
 }
 @media (max-width: 768px) {
+  .blur{
+    display: none;
+  }
   .wishlist {
     flex-direction: column;
     
@@ -1020,4 +1023,5 @@ body {
   );
     
   }
+  
 }

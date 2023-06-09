@@ -139,7 +139,7 @@ const Footer = () => {
               Sign up for the waiting list to get notified when we will release
               the BETA version!
             </p>
-            <div
+            {/* <div
               className={`bg-[#0F0F11] w-full h-11 p-2 pr-1 pl-4 flex justify-between items-center ${
                 isOnViewPort ? "slide-left-footer-2" : ""
               }`}
@@ -152,7 +152,7 @@ const Footer = () => {
               <button className="w-[30%] bg-white text-black font-barlow font-medium text-sm py-2 px-3 cursor-pointer ">
                 Subscribe
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
         <img
