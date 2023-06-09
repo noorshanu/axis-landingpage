@@ -96,7 +96,7 @@ const Mission = () => {
           alt=""
         />
         <div
-          className="mx-auto sub-info grid sm:grid-cols-3 grid-cols-1 gap-y-8 relative place-items-center"
+          className="mx-auto sub-info grid sm:grid-cols-3 grid-cols-1 gap-y-2 relative place-items-center"
           ref={ref}
         >
           <div className=" relative">
@@ -152,7 +152,6 @@ const Mission = () => {
             >
               Per transaction
             </p>
-            
           </div>
 
           <img
@@ -185,8 +184,6 @@ const Mission = () => {
               className="hidden sm:flex  a absolute left-[-30px] xl:left-[-15rem] top-[-38px]"
             />
           </div>
-
-          
         </div>
 
         <img
