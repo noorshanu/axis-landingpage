@@ -15,7 +15,7 @@ const Road = () => {
   }, [animation]);
   return (
     <div className="relative" ref={ref}>
-      <h1 className=" mt-32 mb-12 font-monument text-[#6BFF83] text-2xl font-bold sm:text-3xl text-center mx-auto">
+      <h1 className=" mt-32 mb-12  sm:text-3xl text-center mx-auto text-5xl  text-[#6BFF83] font-[800] font-monument">
         Roadmap
       </h1>
       <video
