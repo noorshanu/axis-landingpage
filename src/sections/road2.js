@@ -65,7 +65,7 @@ const Road = () => {
             top={"55%"}
             left={"49.5%"}
             maxw={"16%"}
-            h1={"Q3"}
+            h1={"Q2"}
             fontSize={"1vw"}
             p1={"Launching Axis Finance"}
             p2={"Lining up first partnerships with Arbitrum protocols"}
@@ -88,7 +88,7 @@ const Road = () => {
             top={"5%"}
             left={"66%"}
             maxw={"12%"}
-            h1={"Q2"}
+            h1={"Q3"}
             p1={"Launching Axis Finance"}
             p2={"Lining up first partnerships with Arbitrum protocols"}
             p3={
