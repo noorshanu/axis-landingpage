@@ -16,11 +16,11 @@ const About = () => {
       </ReactVisibilitySensor>
 
       <div className=" text-center pt-48 z-40 relative mt-8 backdrop:blur-lg bg-black bg-opacity-20">
-        <video autoPlay loop muted id="about_video2" className=" invisible">
-          <source src="assets/about.webm" />
+        <video autoPlay loop muted playsInline id="about_video2" className=" invisible">
+          <source src="assets/about.webm"  type="video/webm"/>
         </video>
-        <video autoPlay loop muted id="about_video2" className=" absolute sm:w-[90%] w-[100%] lg:w-[50%] z-50 h-auto inset-[0px]">
-          <source src="assets/about.webm" />
+        <video autoPlay loop muted playsInline id="about_video2" className=" absolute sm:w-[90%] w-[100%] lg:w-[50%] z-50 h-auto inset-[0px]">
+          <source src="assets/about.webm" type="video/webm" />
         </video>
       </div>
     </section>

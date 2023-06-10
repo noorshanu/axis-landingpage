@@ -35,9 +35,7 @@ function App() {
             data-aos-duration="1000"
           >
             <div className="overlays"></div>
-            <video autoPlay loop muted id="about_video" src="assets/hero.mp4" playsInline>
-             
-              
+            <video  id="about_video" src="assets/hero.mp4" autoPlay loop muted playsInline type="video/mp4">
             </video>
             <div className="mx-auto  max-w-7xl px-4 sm:px-12 absolute top-3 left-0 right-0  ">
               <Navbar />
