@@ -42,7 +42,7 @@ const Hero = () => {
       </h1>
 
       <p className="text-base text-[#FFFFFF]  animate-left-delay-text sm:w-2/3 w-[84%]  font-red-hat md:text-sm md:leading-6 lg:text-lg lg:leading-8">
-        LAxis Finance is the first
+        Axis Finance is the first
         <span className="text-[#6BFF83] mx-1">all-in-one</span>
         DeFi Protocol. Ax your way to the future of DeFi!
         <br />

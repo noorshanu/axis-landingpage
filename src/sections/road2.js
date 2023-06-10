@@ -77,7 +77,8 @@ const Road = () => {
             top={"55%"}
             left={"17%"}
             maxw={"12%"}
-            h1={"Q4"}
+            className={'mb-[14px] mt-[26px]'}
+            imgHead={'assets/Q4.png'}
             p1={"Launching Axis Finance"}
             p2={"Lining up first partnerships with Arbitrum protocols"}
             p3={
@@ -99,7 +100,8 @@ const Road = () => {
             top={"55%"}
             left={"83%"}
             maxw={"12%"}
-            h1={"Q4"}
+            imgHead={'assets/Q4.png'}
+            className={'mb-[14px] mt-[26px]'}
             p1={"Launching Axis Finance"}
             p2={"Lining up first partnerships with Arbitrum protocols"}
             p3={
