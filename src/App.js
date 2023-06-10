@@ -35,7 +35,9 @@ function App() {
             data-aos-duration="1000"
           >
             <div className="overlays"></div>
-            <video  id="about_video" src="assets/hero.mp4" autoPlay loop muted playsInline type="video/mp4">
+            <video  id="about_video"  autoPlay loop muted playsInline >
+              <source src="assets/hero.mp4" type="video/mp4" />
+              <source src="assets/hero.webm" type="video/webm" />
             </video>
             <div className="mx-auto  max-w-7xl px-4 sm:px-12 absolute top-3 left-0 right-0  ">
               <Navbar />
