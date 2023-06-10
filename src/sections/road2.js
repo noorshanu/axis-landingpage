@@ -15,7 +15,7 @@ const Road = () => {
   }, [animation]);
   return (
     <div className="relative" ref={ref}>
-      <h1 className=" mt-12 sm:mt-32 mb-12  sm:text-3xl text-center mx-auto text-5xl  text-[#6BFF83] font-[800] font-monument">
+      <h1 className=" mt-12 sm:mt-32 mb-12  sm:text-[48px] text-center mx-auto text-5xl  text-[#6BFF83] font-[800] font-monument">
         Roadmap
       </h1>
       <video
@@ -32,11 +32,11 @@ const Road = () => {
       >
         <img
           src="/assets/images/RoadmapFrame.svg"
-          className={`w-full h-auto invisible ${showAnimation ? "hidden" : "sm:flex hidden"}`}
+          className={`w-full h-auto invisible ${showAnimation ? "hidden" : "sm:flex hidden"}`} alt=""
         />
         <img
           src="/assets/images/roadmap-sm-bg.svg"
-          className={`w-full h-auto px-5 flex sm:hidden invisible`}
+          className={`w-full h-auto px-5 flex sm:hidden invisible`} alt=""
         />
         <div className={` inset-0 transition-opacity hidden sm:flex absolute duration-500 ${ showAnimation ? "opacity-0" : "opacity-100"}`}>
           <RoadmapCard2

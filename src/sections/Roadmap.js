@@ -27,7 +27,7 @@ const Roadmap = () => {
   return (
     <div
       ref={ref}
-      className={`${isOnViewPort ? "mt-0 mb-20 sm:my-20  relative slide-right-1" : ""}`}
+      className={`${isOnViewPort ? "mt-0 mb-20 sm:my-8  relative slide-right-1" : ""}`}
     >
       {/* <div className="flex   rounded-[60px]  bg-black  place-items-center"> */}
       <Marquee className="slide-left-footer">

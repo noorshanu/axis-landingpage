@@ -32,7 +32,7 @@ const Mission = () => {
 
   return (
     <>
-      <div className="App pt-20 sm:pt-16 mb-0 sm:mb-6 sm:mt-20  w-4/5 m-auto">
+      <div className="App pt-20 sm:pt-8 mb-0 sm:mb-6 sm:mt-8  w-4/5 m-auto">
         <Swiper
           loop={true}
           speed={1400}
