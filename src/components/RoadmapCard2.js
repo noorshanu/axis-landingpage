@@ -4,6 +4,7 @@ const RoadmapCard2 = ({
   top,
   left,
   maxw,
+  imgHead,
   h1,
   p1,
   p2,
@@ -13,9 +14,10 @@ const RoadmapCard2 = ({
   return (
     <div className={`absolute top-[${top}] left-[${left}]   max-w-[${maxw}]`}>
       {/* <div className={`absolute top-[20%] left-[3%] max-w-[12%]`}> */}
-      <h1 className="text-white font-red-hat font-semibold text-[2vw] mt-[10%] mb-[6%]">
+      <h1 className="text-white font-organetto font-semibold text-[2vw] mt-[10%] mb-[6%]">
         {h1}
       </h1>
+      <img src={imgHead} alt="" className="mt-[26px] mb-[14px]" />
       <div className="space-y-[8%]">
         <p
           className={`text-white font-red-hat ${
