@@ -40,10 +40,12 @@ const Roadmap = () => {
               autoPlay
               loop
               muted
+              playsInline
+              src="assets/fox/im2.webm"
               id="about_video2"
               className="w-[150px] sm:w-[200px]"
             >
-              <source src="assets/fox/im2.webm" />
+            
             </video>
           </div>
           <img
