@@ -21,6 +21,7 @@ const About = () => {
         </video>
         <video autoPlay loop muted playsInline id="about_video2" className=" absolute sm:w-[90%] w-[100%] lg:w-[50%] z-50 h-auto inset-[0px]">
           <source src="assets/about.webm" type="video/webm" />
+          Your browser does not support the video tag.
         </video>
       </div>
     </section>
