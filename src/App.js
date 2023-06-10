@@ -35,7 +35,7 @@ function App() {
             data-aos-duration="1000"
           >
             <div className="overlays"></div>
-            <video  id="about_video"  autoPlay loop muted playsInline >
+            <video  id="about_video"  autoPlay loop muted playsInline controls={false}>
             {/* <source src="assets/hero.webm" type="video/webm" /> */}
               <source src="assets/hero.mp4" type="video/mp4" />
               Your browser does not support the video tag.
