@@ -3,7 +3,7 @@ import React from "react";
 const RoadmapCard = ({ data: { img, title, text } }) => {
   return (
     <>
-      <div className="w-[420px] h-[480px] lg:h-[27rem] rounded-lg shadow dark:border-gray-700  relative">
+      <div className="w-[420px] h-[300px] sm:h-[480px] lg:h-[27rem] rounded-lg shadow dark:border-gray-700  relative">
         <div className="mb-5  rounded-[33px] w-[420px]  flex justify-center items-center p-8">
           <img src={img} className="w-auto sm:h-52 h-32" alt="" />
         </div>

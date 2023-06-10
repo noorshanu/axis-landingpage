@@ -18,7 +18,7 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 5000);
     AOS.init();
   }, []);
 
@@ -35,8 +35,9 @@ function App() {
             data-aos-duration="1000"
           >
             <div className="overlays"></div>
-            <video autoPlay loop muted id="about_video">
-              <source src="assets/hero.webm" />
+            <video autoPlay loop muted id="about_video" src="assets/hero.mp4" playsInline>
+             
+              
             </video>
             <div className="mx-auto  max-w-7xl px-4 sm:px-12 absolute top-3 left-0 right-0  ">
               <Navbar />

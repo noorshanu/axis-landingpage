@@ -32,7 +32,7 @@ const Mission = () => {
 
   return (
     <>
-      <div className="App  pt-16 mb-6 sm:mt-20  w-4/5 m-auto">
+      <div className="App pt-20 sm:pt-8 mb-0 sm:mb-6 sm:mt-8  w-4/5 m-auto">
         <Swiper
           loop={true}
           speed={1400}
@@ -42,7 +42,7 @@ const Mission = () => {
             // reverseDirection:true,
           }}
           initialSlide={6}
-          className="h-[830px]"
+          className="h h-auto sm:h-[830px] "
           effect="coverflow"
           coverflowEffect={{
             rotate: 45,
@@ -89,7 +89,7 @@ const Mission = () => {
         </Swiper>
       </div>
 
-      <div className=" sm:mt-20  relative my-3">
+      <div className="  mt-20 sm:mt-20  relative my-3">
         <img
           src="assets/images/whiteLine.svg"
           className="left-[-10px] top-[-21em] absolute hidden sm:block"
@@ -109,8 +109,8 @@ const Mission = () => {
                 {({ isVisible }) => (
                   <div>
                     {" "}
-                    <span className="text-black">a</span>
-                    {isVisible ? <CountUp end={20223} /> : null}
+                   
+                    {isVisible ? <CountUp end={2023} /> : null}<span className="text-black">.</span>
                   </div>
                 )}
               </ReactVisibilitySensor>
@@ -127,12 +127,13 @@ const Mission = () => {
               alt=""
               className="hidden sm:flex a absolute right-[-30px] xl:right-[-15rem] top-[-38px]"
             />
-          </div>
-          <img
-            src="assets/line.png"
-            className="  block sm:hidden rotate-90 h-full w-auto"
+             <img
+            src="assets/line3.png"
+            className="  block sm:hidden  h-full w-auto m-auto mt-8 mb-8"
             alt=""
           />
+          </div>
+         
           <div className=" relative">
             <h1
               className={`${
@@ -155,9 +156,9 @@ const Mission = () => {
           </div>
 
           <img
-            src="assets/line.png"
+            src="assets/line3.png"
             alt=""
-            className=" flex sm:hidden rotate-90 "
+            className=" flex sm:hidden mt-8 mb-8 "
           />
           <div className="relative">
             <h1
