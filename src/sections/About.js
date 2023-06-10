@@ -15,7 +15,7 @@ const About = () => {
         )}
       </ReactVisibilitySensor>
 
-      <div className=" text-center pt-48 z-40 relative mt-8 backdrop:blur-lg bg-black bg-opacity-20">
+      <div className=" text-center pt-48 z-40 relative mt-8 backdrop:blur-lg ">
         <video autoPlay loop muted id="about_video2" className=" invisible">
           <source src="assets/about.webm" />
         </video>
