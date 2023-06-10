@@ -50,7 +50,7 @@ const Hero = () => {
         <span className="text-[#6BFF83] mx-1">all-in-one</span> DeFi Protocol.
       </p>
      
-      <div className="hero-social-box relative md:absolute md:top-[400px]   md:right-[20px] w-[58px] pb-3 px-2 animate-top-bottom overflow-x-visible md:overflow-x-hidden">
+      <div className="hero-social-box relative md:absolute md:top-[400px]   md:right-[-70px] w-[58px] pb-3 px-2 animate-top-bottom overflow-x-visible md:overflow-x-hidden">
         <a
           href="/"
           className={` bg-black ${classNames.firstChild} anim social-s mx-1 sm:mx-0 `}
